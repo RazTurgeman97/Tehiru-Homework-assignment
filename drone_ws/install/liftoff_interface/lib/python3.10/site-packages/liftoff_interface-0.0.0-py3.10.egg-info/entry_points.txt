@@ -1,0 +1,5 @@
+[console_scripts]
+controller = liftoff_interface.controller:main
+liftoff_bridge = liftoff_interface.liftoff_bridge:main
+sensor_listener = liftoff_interface.sensor_listener:main
+

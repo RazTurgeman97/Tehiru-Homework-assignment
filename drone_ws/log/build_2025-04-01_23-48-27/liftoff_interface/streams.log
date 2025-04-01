@@ -1,0 +1,26 @@
+[1.444s] Invoking command in '/home/raz/tehiru/drone_ws/src/liftoff_interface': PYTHONPATH=/home/raz/tehiru/drone_ws/build/liftoff_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/raz/tehiru/drone_ws/install/liftoff_interface/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/liftoff_interface build --build-base /home/raz/tehiru/drone_ws/build/liftoff_interface/build install --record /home/raz/tehiru/drone_ws/build/liftoff_interface/install.log --single-version-externally-managed install_data
+[1.742s] running egg_info
+[1.743s] writing ../../build/liftoff_interface/liftoff_interface.egg-info/PKG-INFO
+[1.745s] writing dependency_links to ../../build/liftoff_interface/liftoff_interface.egg-info/dependency_links.txt
+[1.745s] writing entry points to ../../build/liftoff_interface/liftoff_interface.egg-info/entry_points.txt
+[1.746s] writing requirements to ../../build/liftoff_interface/liftoff_interface.egg-info/requires.txt
+[1.746s] writing top-level names to ../../build/liftoff_interface/liftoff_interface.egg-info/top_level.txt
+[1.749s] reading manifest file '../../build/liftoff_interface/liftoff_interface.egg-info/SOURCES.txt'
+[1.751s] writing manifest file '../../build/liftoff_interface/liftoff_interface.egg-info/SOURCES.txt'
+[1.751s] running build
+[1.751s] running build_py
+[1.752s] copying liftoff_interface/liftoff_bridge.py -> /home/raz/tehiru/drone_ws/build/liftoff_interface/build/lib/liftoff_interface
+[1.752s] running install
+[1.753s] running install_lib
+[1.753s] copying /home/raz/tehiru/drone_ws/build/liftoff_interface/build/lib/liftoff_interface/liftoff_bridge.py -> /home/raz/tehiru/drone_ws/install/liftoff_interface/lib/python3.10/site-packages/liftoff_interface
+[1.754s] byte-compiling /home/raz/tehiru/drone_ws/install/liftoff_interface/lib/python3.10/site-packages/liftoff_interface/liftoff_bridge.py to liftoff_bridge.cpython-310.pyc
+[1.755s] running install_data
+[1.756s] running install_egg_info
+[1.758s] removing '/home/raz/tehiru/drone_ws/install/liftoff_interface/lib/python3.10/site-packages/liftoff_interface-0.0.0-py3.10.egg-info' (and everything under it)
+[1.759s] Copying ../../build/liftoff_interface/liftoff_interface.egg-info to /home/raz/tehiru/drone_ws/install/liftoff_interface/lib/python3.10/site-packages/liftoff_interface-0.0.0-py3.10.egg-info
+[1.760s] running install_scripts
+[1.791s] Installing controller script to /home/raz/tehiru/drone_ws/install/liftoff_interface/lib/liftoff_interface
+[1.791s] Installing liftoff_bridge script to /home/raz/tehiru/drone_ws/install/liftoff_interface/lib/liftoff_interface
+[1.792s] Installing sensor_listener script to /home/raz/tehiru/drone_ws/install/liftoff_interface/lib/liftoff_interface
+[1.792s] writing list of installed files to '/home/raz/tehiru/drone_ws/build/liftoff_interface/install.log'
+[1.879s] Invoked command in '/home/raz/tehiru/drone_ws/src/liftoff_interface' returned '0': PYTHONPATH=/home/raz/tehiru/drone_ws/build/liftoff_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/raz/tehiru/drone_ws/install/liftoff_interface/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/liftoff_interface build --build-base /home/raz/tehiru/drone_ws/build/liftoff_interface/build install --record /home/raz/tehiru/drone_ws/build/liftoff_interface/install.log --single-version-externally-managed install_data

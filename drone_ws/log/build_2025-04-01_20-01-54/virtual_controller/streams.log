@@ -1,0 +1,24 @@
+[1.217s] Invoking command in '/home/raz/tehiru/drone_ws/src/virtual_controller': PYTHONPATH=/home/raz/tehiru/drone_ws/build/virtual_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/raz/tehiru/drone_ws/install/virtual_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/virtual_controller build --build-base /home/raz/tehiru/drone_ws/build/virtual_controller/build install --record /home/raz/tehiru/drone_ws/build/virtual_controller/install.log --single-version-externally-managed install_data
+[1.532s] running egg_info
+[1.534s] writing ../../build/virtual_controller/virtual_controller.egg-info/PKG-INFO
+[1.534s] writing dependency_links to ../../build/virtual_controller/virtual_controller.egg-info/dependency_links.txt
+[1.534s] writing entry points to ../../build/virtual_controller/virtual_controller.egg-info/entry_points.txt
+[1.535s] writing requirements to ../../build/virtual_controller/virtual_controller.egg-info/requires.txt
+[1.535s] writing top-level names to ../../build/virtual_controller/virtual_controller.egg-info/top_level.txt
+[1.538s] reading manifest file '../../build/virtual_controller/virtual_controller.egg-info/SOURCES.txt'
+[1.539s] writing manifest file '../../build/virtual_controller/virtual_controller.egg-info/SOURCES.txt'
+[1.539s] running build
+[1.539s] running build_py
+[1.539s] copying virtual_controller/virtual_controller_node.py -> /home/raz/tehiru/drone_ws/build/virtual_controller/build/lib/virtual_controller
+[1.539s] running install
+[1.540s] running install_lib
+[1.541s] copying /home/raz/tehiru/drone_ws/build/virtual_controller/build/lib/virtual_controller/virtual_controller_node.py -> /home/raz/tehiru/drone_ws/install/virtual_controller/lib/python3.10/site-packages/virtual_controller
+[1.542s] byte-compiling /home/raz/tehiru/drone_ws/install/virtual_controller/lib/python3.10/site-packages/virtual_controller/virtual_controller_node.py to virtual_controller_node.cpython-310.pyc
+[1.544s] running install_data
+[1.545s] running install_egg_info
+[1.548s] removing '/home/raz/tehiru/drone_ws/install/virtual_controller/lib/python3.10/site-packages/virtual_controller-0.0.0-py3.10.egg-info' (and everything under it)
+[1.548s] Copying ../../build/virtual_controller/virtual_controller.egg-info to /home/raz/tehiru/drone_ws/install/virtual_controller/lib/python3.10/site-packages/virtual_controller-0.0.0-py3.10.egg-info
+[1.549s] running install_scripts
+[1.575s] Installing virtual_controller_node script to /home/raz/tehiru/drone_ws/install/virtual_controller/lib/virtual_controller
+[1.576s] writing list of installed files to '/home/raz/tehiru/drone_ws/build/virtual_controller/install.log'
+[1.635s] Invoked command in '/home/raz/tehiru/drone_ws/src/virtual_controller' returned '0': PYTHONPATH=/home/raz/tehiru/drone_ws/build/virtual_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/raz/tehiru/drone_ws/install/virtual_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/virtual_controller build --build-base /home/raz/tehiru/drone_ws/build/virtual_controller/build install --record /home/raz/tehiru/drone_ws/build/virtual_controller/install.log --single-version-externally-managed install_data

@@ -1,0 +1,3 @@
+[console_scripts]
+virtual_controller_node = virtual_controller.virtual_controller_node:main
+
