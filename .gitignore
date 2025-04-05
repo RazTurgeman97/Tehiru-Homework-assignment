@@ -1,29 +1,29 @@
 # Ignore ROS2 build artifacts inside ros2_ws/
-ros2_ws/build/
-ros2_ws/install/
-ros2_ws/log/
-ros2_ws/.colcon/
+drone_ws/build/
+drone_ws/install/
+drone_ws/log/
+drone_ws/.colcon/
 
 # Ignore CMake and compiled files
-ros2_ws/CMakeCache.txt
-ros2_ws/CMakeFiles/
-ros2_ws/cmake_install.cmake
-ros2_ws/Makefile
+drone_ws/CMakeCache.txt
+drone_ws/CMakeFiles/
+drone_ws/cmake_install.cmake
+drone_ws/Makefile
 
 # Ignore Python cache
-ros2_ws/**/__pycache__/
-ros2_ws/**/*.pyc
-ros2_ws/**/*.pyo
+drone_ws/**/__pycache__/
+drone_ws/**/*.pyc
+drone_ws/**/*.pyo
 
 # Ignore VSCode settings (optional)
 .vscode/
 
 # Ignore ROS2-generated files
-ros2_ws/**/*.log
-ros2_ws/*.db3
+drone_ws/**/*.log
+drone_ws/*.db3
 
 # Ignore compiled binaries and libraries
-ros2_ws/**/*.so
-ros2_ws/**/*.o
-ros2_ws/**/*.a
-ros2_ws/**/*.exe
+drone_ws/**/*.so
+drone_ws/**/*.o
+drone_ws/**/*.a
+drone_ws/**/*.exe
