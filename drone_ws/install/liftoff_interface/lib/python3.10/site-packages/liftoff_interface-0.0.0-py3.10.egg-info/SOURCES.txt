@@ -9,7 +9,6 @@ setup.py
 ../../build/liftoff_interface/liftoff_interface.egg-info/top_level.txt
 ../../build/liftoff_interface/liftoff_interface.egg-info/zip-safe
 launch/drone_control.launch.py
-launch/test_system.launch.py
 liftoff_interface/__init__.py
 liftoff_interface/attitude_adapter.py
 liftoff_interface/drone_activator.py

@@ -1,1 +1,4 @@
-/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_utils/ament_cmake_environment_hooks/local_setup.dsv
+source;share/liftoff_utils/environment/ament_prefix_path.sh
+source;share/liftoff_utils/environment/library_path.sh
+source;share/liftoff_utils/environment/path.sh
+source;share/liftoff_utils/environment/pythonpath.sh

@@ -98,7 +98,6 @@
 /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/virtual_ps_controller/lib/virtual_ps_controller/ps_controller_node
 /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/virtual_ps_controller/include/include/virtual_ps_controller/ps_controller.hpp
 /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/virtual_ps_controller/include/include/virtual_ps_controller/controller.hpp
-/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/virtual_ps_controller/share/virtual_ps_controller/launch/virtual_ps_controller.launch.py
 /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/virtual_ps_controller/share/ament_index/resource_index/package_run_dependencies/virtual_ps_controller
 /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/virtual_ps_controller/share/ament_index/resource_index/parent_prefix_path/virtual_ps_controller
 /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/virtual_ps_controller/share/virtual_ps_controller/environment/ament_prefix_path.sh

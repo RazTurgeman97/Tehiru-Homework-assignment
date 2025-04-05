@@ -1,1 +1,0 @@
-/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/src/liftoff_interface/launch/test_system.launch.py

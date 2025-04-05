@@ -1,1 +1,58 @@
-/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_utils/rosidl_generator_c/liftoff_utils/srv/detail/target_navigation__type_support.h
+// generated from rosidl_generator_c/resource/idl__type_support.h.em
+// with input from liftoff_utils:srv/TargetNavigation.idl
+// generated code does not contain a copyright notice
+
+#ifndef LIFTOFF_UTILS__SRV__DETAIL__TARGET_NAVIGATION__TYPE_SUPPORT_H_
+#define LIFTOFF_UTILS__SRV__DETAIL__TARGET_NAVIGATION__TYPE_SUPPORT_H_
+
+#include "rosidl_typesupport_interface/macros.h"
+
+#include "liftoff_utils/msg/rosidl_generator_c__visibility_control.h"
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+#include "rosidl_runtime_c/message_type_support_struct.h"
+
+// Forward declare the get type support functions for this type.
+ROSIDL_GENERATOR_C_PUBLIC_liftoff_utils
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+  rosidl_typesupport_c,
+  liftoff_utils,
+  srv,
+  TargetNavigation_Request
+)();
+
+// already included above
+// #include "rosidl_runtime_c/message_type_support_struct.h"
+
+// Forward declare the get type support functions for this type.
+ROSIDL_GENERATOR_C_PUBLIC_liftoff_utils
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+  rosidl_typesupport_c,
+  liftoff_utils,
+  srv,
+  TargetNavigation_Response
+)();
+
+#include "rosidl_runtime_c/service_type_support_struct.h"
+
+// Forward declare the get type support functions for this type.
+ROSIDL_GENERATOR_C_PUBLIC_liftoff_utils
+const rosidl_service_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(
+  rosidl_typesupport_c,
+  liftoff_utils,
+  srv,
+  TargetNavigation
+)();
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif  // LIFTOFF_UTILS__SRV__DETAIL__TARGET_NAVIGATION__TYPE_SUPPORT_H_

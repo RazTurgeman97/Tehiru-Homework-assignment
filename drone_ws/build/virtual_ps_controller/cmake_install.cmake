@@ -412,13 +412,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/virtual_ps_controller" TYPE DIRECTORY FILES
-    "/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/src/virtual_ps_controller/launch"
-    "/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/src/virtual_ps_controller/config"
-    )
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/virtual_ps_controller/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/virtual_ps_controller")
 endif()
 

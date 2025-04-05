@@ -315,17 +315,17 @@ liftoff_utils__rosidl_typesupport_cpp/fast:
 .PHONY : liftoff_utils__rosidl_typesupport_cpp/fast
 
 #=============================================================================
-# Target rules for targets named ament_cmake_python_symlink_liftoff_utils
+# Target rules for targets named ament_cmake_python_copy_liftoff_utils
 
 # Build rule for target.
-ament_cmake_python_symlink_liftoff_utils: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_symlink_liftoff_utils
-.PHONY : ament_cmake_python_symlink_liftoff_utils
+ament_cmake_python_copy_liftoff_utils: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_liftoff_utils
+.PHONY : ament_cmake_python_copy_liftoff_utils
 
 # fast build rule for target.
-ament_cmake_python_symlink_liftoff_utils/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_liftoff_utils.dir/build.make CMakeFiles/ament_cmake_python_symlink_liftoff_utils.dir/build
-.PHONY : ament_cmake_python_symlink_liftoff_utils/fast
+ament_cmake_python_copy_liftoff_utils/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_liftoff_utils.dir/build.make CMakeFiles/ament_cmake_python_copy_liftoff_utils.dir/build
+.PHONY : ament_cmake_python_copy_liftoff_utils/fast
 
 #=============================================================================
 # Target rules for targets named ament_cmake_python_build_liftoff_utils_egg
@@ -683,7 +683,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... ament_cmake_python_build_liftoff_utils_egg"
-	@echo "... ament_cmake_python_symlink_liftoff_utils"
+	@echo "... ament_cmake_python_copy_liftoff_utils"
 	@echo "... liftoff_utils"
 	@echo "... liftoff_utils__cpp"
 	@echo "... liftoff_utils__py"

@@ -95,7 +95,7 @@ clean: CMakeFiles/liftoff_utils__rosidl_typesupport_introspection_c.dir/clean
 clean: CMakeFiles/liftoff_utils__rosidl_typesupport_c.dir/clean
 clean: CMakeFiles/liftoff_utils__rosidl_typesupport_introspection_cpp.dir/clean
 clean: CMakeFiles/liftoff_utils__rosidl_typesupport_cpp.dir/clean
-clean: CMakeFiles/ament_cmake_python_symlink_liftoff_utils.dir/clean
+clean: CMakeFiles/ament_cmake_python_copy_liftoff_utils.dir/clean
 clean: CMakeFiles/ament_cmake_python_build_liftoff_utils_egg.dir/clean
 clean: CMakeFiles/liftoff_utils__rosidl_generator_py.dir/clean
 clean: CMakeFiles/liftoff_utils__rosidl_typesupport_fastrtps_c__pyext.dir/clean
@@ -175,14 +175,14 @@ CMakeFiles/liftoff_utils_uninstall.dir/clean:
 # Target rules for target CMakeFiles/liftoff_utils.dir
 
 # All Build rule for target.
+CMakeFiles/liftoff_utils.dir/all: CMakeFiles/liftoff_utils__rosidl_generator_c.dir/all
+CMakeFiles/liftoff_utils.dir/all: CMakeFiles/liftoff_utils__rosidl_typesupport_fastrtps_c.dir/all
+CMakeFiles/liftoff_utils.dir/all: CMakeFiles/liftoff_utils__cpp.dir/all
 CMakeFiles/liftoff_utils.dir/all: CMakeFiles/liftoff_utils__rosidl_typesupport_fastrtps_cpp.dir/all
 CMakeFiles/liftoff_utils.dir/all: CMakeFiles/liftoff_utils__rosidl_typesupport_introspection_c.dir/all
 CMakeFiles/liftoff_utils.dir/all: CMakeFiles/liftoff_utils__rosidl_typesupport_c.dir/all
 CMakeFiles/liftoff_utils.dir/all: CMakeFiles/liftoff_utils__rosidl_typesupport_introspection_cpp.dir/all
 CMakeFiles/liftoff_utils.dir/all: CMakeFiles/liftoff_utils__rosidl_typesupport_cpp.dir/all
-CMakeFiles/liftoff_utils.dir/all: CMakeFiles/liftoff_utils__rosidl_generator_c.dir/all
-CMakeFiles/liftoff_utils.dir/all: CMakeFiles/liftoff_utils__rosidl_typesupport_fastrtps_c.dir/all
-CMakeFiles/liftoff_utils.dir/all: CMakeFiles/liftoff_utils__cpp.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/liftoff_utils.dir/build.make CMakeFiles/liftoff_utils.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/liftoff_utils.dir/build.make CMakeFiles/liftoff_utils.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_utils/CMakeFiles --progress-num= "Built target liftoff_utils"
@@ -413,36 +413,36 @@ CMakeFiles/liftoff_utils__rosidl_typesupport_cpp.dir/clean:
 .PHONY : CMakeFiles/liftoff_utils__rosidl_typesupport_cpp.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/ament_cmake_python_symlink_liftoff_utils.dir
+# Target rules for target CMakeFiles/ament_cmake_python_copy_liftoff_utils.dir
 
 # All Build rule for target.
-CMakeFiles/ament_cmake_python_symlink_liftoff_utils.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_liftoff_utils.dir/build.make CMakeFiles/ament_cmake_python_symlink_liftoff_utils.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_liftoff_utils.dir/build.make CMakeFiles/ament_cmake_python_symlink_liftoff_utils.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_utils/CMakeFiles --progress-num= "Built target ament_cmake_python_symlink_liftoff_utils"
-.PHONY : CMakeFiles/ament_cmake_python_symlink_liftoff_utils.dir/all
+CMakeFiles/ament_cmake_python_copy_liftoff_utils.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_liftoff_utils.dir/build.make CMakeFiles/ament_cmake_python_copy_liftoff_utils.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_liftoff_utils.dir/build.make CMakeFiles/ament_cmake_python_copy_liftoff_utils.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_utils/CMakeFiles --progress-num= "Built target ament_cmake_python_copy_liftoff_utils"
+.PHONY : CMakeFiles/ament_cmake_python_copy_liftoff_utils.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/ament_cmake_python_symlink_liftoff_utils.dir/rule: cmake_check_build_system
+CMakeFiles/ament_cmake_python_copy_liftoff_utils.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_utils/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ament_cmake_python_symlink_liftoff_utils.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ament_cmake_python_copy_liftoff_utils.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_utils/CMakeFiles 0
-.PHONY : CMakeFiles/ament_cmake_python_symlink_liftoff_utils.dir/rule
+.PHONY : CMakeFiles/ament_cmake_python_copy_liftoff_utils.dir/rule
 
 # Convenience name for target.
-ament_cmake_python_symlink_liftoff_utils: CMakeFiles/ament_cmake_python_symlink_liftoff_utils.dir/rule
-.PHONY : ament_cmake_python_symlink_liftoff_utils
+ament_cmake_python_copy_liftoff_utils: CMakeFiles/ament_cmake_python_copy_liftoff_utils.dir/rule
+.PHONY : ament_cmake_python_copy_liftoff_utils
 
 # clean rule for target.
-CMakeFiles/ament_cmake_python_symlink_liftoff_utils.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_liftoff_utils.dir/build.make CMakeFiles/ament_cmake_python_symlink_liftoff_utils.dir/clean
-.PHONY : CMakeFiles/ament_cmake_python_symlink_liftoff_utils.dir/clean
+CMakeFiles/ament_cmake_python_copy_liftoff_utils.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_liftoff_utils.dir/build.make CMakeFiles/ament_cmake_python_copy_liftoff_utils.dir/clean
+.PHONY : CMakeFiles/ament_cmake_python_copy_liftoff_utils.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/ament_cmake_python_build_liftoff_utils_egg.dir
 
 # All Build rule for target.
-CMakeFiles/ament_cmake_python_build_liftoff_utils_egg.dir/all: CMakeFiles/ament_cmake_python_symlink_liftoff_utils.dir/all
+CMakeFiles/ament_cmake_python_build_liftoff_utils_egg.dir/all: CMakeFiles/ament_cmake_python_copy_liftoff_utils.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_build_liftoff_utils_egg.dir/build.make CMakeFiles/ament_cmake_python_build_liftoff_utils_egg.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_build_liftoff_utils_egg.dir/build.make CMakeFiles/ament_cmake_python_build_liftoff_utils_egg.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_utils/CMakeFiles --progress-num= "Built target ament_cmake_python_build_liftoff_utils_egg"
@@ -468,9 +468,9 @@ CMakeFiles/ament_cmake_python_build_liftoff_utils_egg.dir/clean:
 # Target rules for target CMakeFiles/liftoff_utils__rosidl_generator_py.dir
 
 # All Build rule for target.
+CMakeFiles/liftoff_utils__rosidl_generator_py.dir/all: CMakeFiles/liftoff_utils__rosidl_generator_c.dir/all
 CMakeFiles/liftoff_utils__rosidl_generator_py.dir/all: CMakeFiles/liftoff_utils__rosidl_typesupport_c.dir/all
 CMakeFiles/liftoff_utils__rosidl_generator_py.dir/all: liftoff_utils__py/CMakeFiles/liftoff_utils__py.dir/all
-CMakeFiles/liftoff_utils__rosidl_generator_py.dir/all: CMakeFiles/liftoff_utils__rosidl_generator_c.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/liftoff_utils__rosidl_generator_py.dir/build.make CMakeFiles/liftoff_utils__rosidl_generator_py.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/liftoff_utils__rosidl_generator_py.dir/build.make CMakeFiles/liftoff_utils__rosidl_generator_py.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_utils/CMakeFiles --progress-num=6,7 "Built target liftoff_utils__rosidl_generator_py"
@@ -496,11 +496,11 @@ CMakeFiles/liftoff_utils__rosidl_generator_py.dir/clean:
 # Target rules for target CMakeFiles/liftoff_utils__rosidl_typesupport_fastrtps_c__pyext.dir
 
 # All Build rule for target.
+CMakeFiles/liftoff_utils__rosidl_typesupport_fastrtps_c__pyext.dir/all: CMakeFiles/liftoff_utils__rosidl_generator_c.dir/all
+CMakeFiles/liftoff_utils__rosidl_typesupport_fastrtps_c__pyext.dir/all: CMakeFiles/liftoff_utils__rosidl_typesupport_fastrtps_c.dir/all
 CMakeFiles/liftoff_utils__rosidl_typesupport_fastrtps_c__pyext.dir/all: CMakeFiles/liftoff_utils__rosidl_typesupport_c.dir/all
 CMakeFiles/liftoff_utils__rosidl_typesupport_fastrtps_c__pyext.dir/all: CMakeFiles/liftoff_utils__rosidl_generator_py.dir/all
 CMakeFiles/liftoff_utils__rosidl_typesupport_fastrtps_c__pyext.dir/all: liftoff_utils__py/CMakeFiles/liftoff_utils__py.dir/all
-CMakeFiles/liftoff_utils__rosidl_typesupport_fastrtps_c__pyext.dir/all: CMakeFiles/liftoff_utils__rosidl_generator_c.dir/all
-CMakeFiles/liftoff_utils__rosidl_typesupport_fastrtps_c__pyext.dir/all: CMakeFiles/liftoff_utils__rosidl_typesupport_fastrtps_c.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/liftoff_utils__rosidl_typesupport_fastrtps_c__pyext.dir/build.make CMakeFiles/liftoff_utils__rosidl_typesupport_fastrtps_c__pyext.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/liftoff_utils__rosidl_typesupport_fastrtps_c__pyext.dir/build.make CMakeFiles/liftoff_utils__rosidl_typesupport_fastrtps_c__pyext.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_utils/CMakeFiles --progress-num=19,20 "Built target liftoff_utils__rosidl_typesupport_fastrtps_c__pyext"
@@ -526,11 +526,11 @@ CMakeFiles/liftoff_utils__rosidl_typesupport_fastrtps_c__pyext.dir/clean:
 # Target rules for target CMakeFiles/liftoff_utils__rosidl_typesupport_introspection_c__pyext.dir
 
 # All Build rule for target.
+CMakeFiles/liftoff_utils__rosidl_typesupport_introspection_c__pyext.dir/all: CMakeFiles/liftoff_utils__rosidl_generator_c.dir/all
 CMakeFiles/liftoff_utils__rosidl_typesupport_introspection_c__pyext.dir/all: CMakeFiles/liftoff_utils__rosidl_typesupport_introspection_c.dir/all
 CMakeFiles/liftoff_utils__rosidl_typesupport_introspection_c__pyext.dir/all: CMakeFiles/liftoff_utils__rosidl_typesupport_c.dir/all
 CMakeFiles/liftoff_utils__rosidl_typesupport_introspection_c__pyext.dir/all: CMakeFiles/liftoff_utils__rosidl_generator_py.dir/all
 CMakeFiles/liftoff_utils__rosidl_typesupport_introspection_c__pyext.dir/all: liftoff_utils__py/CMakeFiles/liftoff_utils__py.dir/all
-CMakeFiles/liftoff_utils__rosidl_typesupport_introspection_c__pyext.dir/all: CMakeFiles/liftoff_utils__rosidl_generator_c.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/liftoff_utils__rosidl_typesupport_introspection_c__pyext.dir/build.make CMakeFiles/liftoff_utils__rosidl_typesupport_introspection_c__pyext.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/liftoff_utils__rosidl_typesupport_introspection_c__pyext.dir/build.make CMakeFiles/liftoff_utils__rosidl_typesupport_introspection_c__pyext.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_utils/CMakeFiles --progress-num=27,28 "Built target liftoff_utils__rosidl_typesupport_introspection_c__pyext"
@@ -556,10 +556,10 @@ CMakeFiles/liftoff_utils__rosidl_typesupport_introspection_c__pyext.dir/clean:
 # Target rules for target CMakeFiles/liftoff_utils__rosidl_typesupport_c__pyext.dir
 
 # All Build rule for target.
+CMakeFiles/liftoff_utils__rosidl_typesupport_c__pyext.dir/all: CMakeFiles/liftoff_utils__rosidl_generator_c.dir/all
 CMakeFiles/liftoff_utils__rosidl_typesupport_c__pyext.dir/all: CMakeFiles/liftoff_utils__rosidl_typesupport_c.dir/all
 CMakeFiles/liftoff_utils__rosidl_typesupport_c__pyext.dir/all: CMakeFiles/liftoff_utils__rosidl_generator_py.dir/all
 CMakeFiles/liftoff_utils__rosidl_typesupport_c__pyext.dir/all: liftoff_utils__py/CMakeFiles/liftoff_utils__py.dir/all
-CMakeFiles/liftoff_utils__rosidl_typesupport_c__pyext.dir/all: CMakeFiles/liftoff_utils__rosidl_generator_c.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/liftoff_utils__rosidl_typesupport_c__pyext.dir/build.make CMakeFiles/liftoff_utils__rosidl_typesupport_c__pyext.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/liftoff_utils__rosidl_typesupport_c__pyext.dir/build.make CMakeFiles/liftoff_utils__rosidl_typesupport_c__pyext.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_utils/CMakeFiles --progress-num=11,12 "Built target liftoff_utils__rosidl_typesupport_c__pyext"

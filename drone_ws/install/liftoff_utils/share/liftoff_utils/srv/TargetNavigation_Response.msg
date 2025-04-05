@@ -1,1 +1,4 @@
-/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_utils/rosidl_cmake/srv/TargetNavigation_Response.msg
+
+# Response
+string status  # Current status (e.g., "Executing", "Error", "Stopped")
+string error   # Error message (empty if no error)
