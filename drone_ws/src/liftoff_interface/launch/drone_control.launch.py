@@ -1,17 +1,43 @@
 from launch import LaunchDescription
 from launch_ros.actions import Node
+from launch.actions import DeclareLaunchArgument, ExecuteProcess
+from launch.substitutions import LaunchConfiguration
+from launch.conditions import IfCondition
+import os
 
 def generate_launch_description():
     """
     Launch file for the LiftOff drone control system
     
     This launch file starts:
-    1. The telemetry node to receive data from the simulator
-    2. The PS4 controller node to provide controller input
-    3. The drone activator to detect the sim and activate the drone
-    4. The altitude controller for smooth altitude management
-    5. The flight controller for all other flight controls
+    1. The LiftOff simulator through Steam
+    2. The telemetry node to receive data from the simulator
+    3. The PS4 controller node to provide controller input
+    4. The drone activator to detect the sim and activate the drone
+    5. The altitude controller for smooth altitude management
+    6. The flight controller for all other flight controls
     """
+    
+    # Declare the launch arguments
+    altitude_controller_debug = DeclareLaunchArgument(
+        'altitude_controller_debug',
+        default_value='false',
+        description='Enable debug output for altitude controller'
+    )
+    
+    auto_start_simulator = DeclareLaunchArgument(
+        'auto_start_simulator',
+        default_value='true',
+        description='Automatically start the LiftOff simulator'
+    )
+    
+    # Start LiftOff through Steam using the provided command
+    liftoff_app = ExecuteProcess(
+        cmd=['snap', 'run', 'steam', 'steam://rungameid/410340'],
+        name='liftoff_simulator',
+        output='screen',
+        condition=IfCondition(LaunchConfiguration('auto_start_simulator'))
+    )
     
     # Telemetry node receives data from LiftOff simulator
     telemetry_node = Node(
@@ -34,11 +60,12 @@ def generate_launch_description():
         name='drone_activator'
     )
     
-    # Altitude controller for smooth height control
+    # Altitude controller for smooth height control with debug parameter
     altitude_controller = Node(
         package='liftoff_interface',
         executable='altitude_controller',
-        name='altitude_controller'
+        name='altitude_controller',
+        parameters=[{'debug': LaunchConfiguration('altitude_controller_debug')}]
     )
     
     # Flight controller for processing input and managing drone behavior
@@ -49,6 +76,9 @@ def generate_launch_description():
     )
     
     return LaunchDescription([
+        altitude_controller_debug,
+        auto_start_simulator,
+        liftoff_app,
         telemetry_node,
         ps_controller_node,
         drone_activator,
