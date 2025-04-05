@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Float32, String
+from std_msgs.msg import Float32, String, Bool
 from sensor_msgs.msg import Joy
 from std_msgs.msg import Float32MultiArray
 from geometry_msgs.msg import Point, Twist
@@ -14,6 +14,7 @@ class DroneActivator(Node):
         # Publishers
         self.joy_publisher = self.create_publisher(Joy, 'joy', 10)
         self.cmd_vel_publisher = self.create_publisher(Twist, 'cmd_vel', 10)
+        self.drone_status_pub = self.create_publisher(Bool, 'drone/armed', 10)
         
         # Subscribers
         self.battery_sub = self.create_subscription(
@@ -148,6 +149,11 @@ class DroneActivator(Node):
                 self.height_control_timer.cancel()
                 self.height_control_timer = None
                 
+            # Publish disarmed status
+            armed_msg = Bool()
+            armed_msg.data = False
+            self.drone_status_pub.publish(armed_msg)
+            
             return
         
         # Check if motors are spinning (values above zero) - drone is armed
@@ -166,6 +172,11 @@ class DroneActivator(Node):
             
             # Start height control after 3 seconds using a standard timer
             self.height_control_timer = self.create_timer(3.0, self.start_height_control_and_cancel_timer)
+            
+            # Publish armed status
+            armed_msg = Bool()
+            armed_msg.data = True
+            self.drone_status_pub.publish(armed_msg)
 
     def send_test_throttle_once(self):
         """Send a test throttle command once and cancel the timer"""

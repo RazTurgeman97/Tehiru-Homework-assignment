@@ -1,10 +1,5 @@
 [console_scripts]
-attitude_adapter = liftoff_interface.attitude_adapter:main
+altitude_controller = liftoff_interface.altitude_controller:main
 drone_activator = liftoff_interface.drone_activator:main
-drone_controller = liftoff_interface.drone_controller:main
-liftoff_bridge = liftoff_interface.liftoff_bridge:main
-mock_obstacle_publisher = liftoff_interface.mock_obstacle_publisher:main
-sensor_listener = liftoff_interface.sensor_listener:main
-target_navigation_service = liftoff_interface.target_navigation_service:main
-target_selector = liftoff_interface.target_selector:main
+flight_controller = liftoff_interface.flight_controller:main
 

@@ -10,14 +10,10 @@ setup.py
 ../../build/liftoff_interface/liftoff_interface.egg-info/zip-safe
 launch/drone_control.launch.py
 liftoff_interface/__init__.py
-liftoff_interface/attitude_adapter.py
+liftoff_interface/altitude_controller.py
 liftoff_interface/drone_activator.py
 liftoff_interface/drone_controller.py
-liftoff_interface/liftoff_bridge.py
-liftoff_interface/mock_obstacle_publisher.py
-liftoff_interface/sensor_listener.py
-liftoff_interface/target_navigation_service.py
-liftoff_interface/target_selector.py
+liftoff_interface/flight_controller.py
 resource/liftoff_interface
 test/test_copyright.py
 test/test_flake8.py
