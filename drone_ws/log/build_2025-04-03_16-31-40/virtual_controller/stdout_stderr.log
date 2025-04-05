@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing virtual_controller.egg-info/PKG-INFO
+writing dependency_links to virtual_controller.egg-info/dependency_links.txt
+writing entry points to virtual_controller.egg-info/entry_points.txt
+writing requirements to virtual_controller.egg-info/requires.txt
+writing top-level names to virtual_controller.egg-info/top_level.txt
+reading manifest file 'virtual_controller.egg-info/SOURCES.txt'
+writing manifest file 'virtual_controller.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/virtual_controller/lib/python3.10/site-packages/virtual-controller.egg-link (link to .)
+Installing virtual_controller_node script to /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/virtual_controller/lib/virtual_controller
+
+Installed /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/virtual_controller
+running symlink_data
+symbolically linking /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/virtual_controller/resource/virtual_controller -> /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/virtual_controller/share/ament_index/resource_index/packages
+symbolically linking /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/virtual_controller/package.xml -> /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/virtual_controller/share/virtual_controller

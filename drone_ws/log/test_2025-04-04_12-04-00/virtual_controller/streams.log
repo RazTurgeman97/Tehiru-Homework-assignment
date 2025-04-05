@@ -1,0 +1,155 @@
+[0.494s] Invoking command in '/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/src/virtual_controller': AMENT_PREFIX_PATH=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/virtual_controller:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/virtual_controller/pytest.xml --junit-prefix=virtual_controller -o cache_dir=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/virtual_controller/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/virtual_controller:/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/virtual_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[0.760s] [1m============================= test session starts ==============================[0m
+[0.761s] platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+[0.763s] cachedir: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/virtual_controller/.pytest_cache
+[0.763s] rootdir: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/src/virtual_controller
+[0.763s] plugins: launch-testing-1.0.8, ament-xmllint-0.12.12, ament-lint-0.12.12, ament-pep257-0.12.12, ament-flake8-0.12.12, ament-copyright-0.12.12, launch-testing-ros-0.19.9, cov-3.0.0, colcon-core-0.19.0, repeat-0.9.1, rerunfailures-10.2
+[0.798s] [1mcollecting ... [0m[1m
+[0.798s] collected 3 items                                                              [0m
+[0.798s] 
+[0.801s] test/test_copyright.py [33ms[0m[32m                                                 [ 33%][0m
+[0.919s] test/test_flake8.py [31mF[0m[31m                                                    [ 66%][0m
+[0.934s] test/test_pep257.py [32m.[0m[31m                                                    [100%][0m
+[0.934s] 
+[0.934s] =================================== FAILURES ===================================
+[0.934s] [31m[1m_________________________________ test_flake8 __________________________________[0m
+[0.934s] [1m[31mtest/test_flake8.py[0m:23: in test_flake8
+[0.957s]     [94massert[39;49;00m rc == [94m0[39;49;00m, \
+[0.957s] [1m[31mE   AssertionError: Found 18 code style errors / warnings:[0m
+[0.957s] [1m[31mE     ./virtual_controller/virtual_controller_node.py:3:1: I101 Imported names are in the wrong order. Should be AbsInfo, ecodes, UInput[0m
+[0.957s] [1m[31mE     ./virtual_controller/virtual_controller_node.py:3:1: I100 Import statements are in the wrong order. 'from evdev import UInput, AbsInfo, ecodes' should be before 'from rclpy.node import Node'[0m
+[0.958s] [1m[31mE     ./virtual_controller/virtual_controller_node.py:6:1: E302 expected 2 blank lines, found 1[0m
+[0.958s] [1m[31mE     ./virtual_controller/virtual_controller_node.py:7:1: CNL100 Class definition does not have a new line.[0m
+[0.958s] [1m[31mE     ./virtual_controller/virtual_controller_node.py:15:1: W293 blank line contains whitespace[0m
+[0.958s] [1m[31mE     ./virtual_controller/virtual_controller_node.py:19:100: E501 line too long (121 > 99 characters)[0m
+[0.958s] [1m[31mE     ./virtual_controller/virtual_controller_node.py:20:100: E501 line too long (121 > 99 characters)[0m
+[0.958s] [1m[31mE     ./virtual_controller/virtual_controller_node.py:21:100: E501 line too long (122 > 99 characters)[0m
+[0.958s] [1m[31mE     ./virtual_controller/virtual_controller_node.py:22:100: E501 line too long (122 > 99 characters)[0m
+[0.958s] [1m[31mE     ./virtual_controller/virtual_controller_node.py:23:100: E501 line too long (125 > 99 characters)[0m
+[0.958s] [1m[31mE     ./virtual_controller/virtual_controller_node.py:24:100: E501 line too long (126 > 99 characters)[0m
+[0.958s] [1m[31mE     ./virtual_controller/virtual_controller_node.py:25:100: E501 line too long (113 > 99 characters)[0m
+[0.958s] [1m[31mE     ./virtual_controller/virtual_controller_node.py:26:100: E501 line too long (113 > 99 characters)[0m
+[0.958s] [1m[31mE     ./virtual_controller/virtual_controller_node.py:49:1: W293 blank line contains whitespace[0m
+[0.958s] [1m[31mE     ./virtual_controller/virtual_controller_node.py:80:1: W293 blank line contains whitespace[0m
+[0.958s] [1m[31mE     ./virtual_controller/virtual_controller_node.py:98:1: E302 expected 2 blank lines, found 1[0m
+[0.958s] [1m[31mE     ./virtual_controller/virtual_controller_node.py:105:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[0.958s] [1m[31mE     ./virtual_controller/virtual_controller_node.py:106:11: W292 no newline at end of file[0m
+[0.958s] [1m[31mE   assert 1 == 0[0m
+[0.958s] ----------------------------- Captured stdout call -----------------------------
+[0.958s] 
+[0.958s] ./virtual_controller/virtual_controller_node.py:3:1: I101 Imported names are in the wrong order. Should be AbsInfo, ecodes, UInput
+[0.958s] from evdev import UInput, AbsInfo, ecodes as e
+[0.958s] ^
+[0.958s] 
+[0.958s] ./virtual_controller/virtual_controller_node.py:3:1: I100 Import statements are in the wrong order. 'from evdev import UInput, AbsInfo, ecodes' should be before 'from rclpy.node import Node'
+[0.958s] from evdev import UInput, AbsInfo, ecodes as e
+[0.958s] ^
+[0.958s] 
+[0.958s] ./virtual_controller/virtual_controller_node.py:6:1: E302 expected 2 blank lines, found 1
+[0.958s] class VirtualControllerNode(Node):
+[0.958s] ^
+[0.958s] 
+[0.958s] ./virtual_controller/virtual_controller_node.py:7:1: CNL100 Class definition does not have a new line.
+[0.958s]     def __init__(self):
+[0.958s] ^
+[0.958s] 
+[0.958s] ./virtual_controller/virtual_controller_node.py:15:1: W293 blank line contains whitespace
+[0.959s]         
+[0.959s] ^
+[0.959s] 
+[0.959s] ./virtual_controller/virtual_controller_node.py:19:100: E501 line too long (121 > 99 characters)
+[0.959s]                     (e.ABS_X, AbsInfo(value=0, min=-32768, max=32767, fuzz=0, flat=0, resolution=0)),   # Left joystick X
+[0.959s]                                                                                                    ^
+[0.959s] 
+[0.959s] ./virtual_controller/virtual_controller_node.py:20:100: E501 line too long (121 > 99 characters)
+[0.959s]                     (e.ABS_Y, AbsInfo(value=0, min=-32768, max=32767, fuzz=0, flat=0, resolution=0)),   # Left joystick Y
+[0.959s]                                                                                                    ^
+[0.959s] 
+[0.959s] ./virtual_controller/virtual_controller_node.py:21:100: E501 line too long (122 > 99 characters)
+[0.959s]                     (e.ABS_RX, AbsInfo(value=0, min=-32768, max=32767, fuzz=0, flat=0, resolution=0)),  # Right joystick X
+[0.959s]                                                                                                    ^
+[0.959s] 
+[0.959s] ./virtual_controller/virtual_controller_node.py:22:100: E501 line too long (122 > 99 characters)
+[0.959s]                     (e.ABS_RY, AbsInfo(value=0, min=-32768, max=32767, fuzz=0, flat=0, resolution=0)),  # Right joystick Y
+[0.959s]                                                                                                    ^
+[0.959s] 
+[0.959s] ./virtual_controller/virtual_controller_node.py:23:100: E501 line too long (125 > 99 characters)
+[0.959s]                     (e.ABS_Z, AbsInfo(value=0, min=-32768, max=32767, fuzz=0, flat=0, resolution=0)),          # Left trigger
+[0.959s]                                                                                                    ^
+[0.959s] 
+[0.959s] ./virtual_controller/virtual_controller_node.py:24:100: E501 line too long (126 > 99 characters)
+[0.959s]                     (e.ABS_RZ, AbsInfo(value=0, min=-32768, max=32767, fuzz=0, flat=0, resolution=0)),         # Right trigger
+[0.959s]                                                                                                    ^
+[0.959s] 
+[0.959s] ./virtual_controller/virtual_controller_node.py:25:100: E501 line too long (113 > 99 characters)
+[0.959s]                     (e.ABS_HAT0X, AbsInfo(value=0, min=-1, max=1, fuzz=0, flat=0, resolution=0)),       # D-pad X
+[0.959s]                                                                                                    ^
+[0.959s] 
+[0.959s] ./virtual_controller/virtual_controller_node.py:26:100: E501 line too long (113 > 99 characters)
+[0.959s]                     (e.ABS_HAT0Y, AbsInfo(value=0, min=-1, max=1, fuzz=0, flat=0, resolution=0)),       # D-pad Y
+[0.959s]                                                                                                    ^
+[0.959s] 
+[0.959s] ./virtual_controller/virtual_controller_node.py:49:1: W293 blank line contains whitespace
+[0.959s]         
+[0.959s] ^
+[0.959s] 
+[0.960s] ./virtual_controller/virtual_controller_node.py:80:1: W293 blank line contains whitespace
+[0.960s]         
+[0.960s] ^
+[0.960s] 
+[0.960s] ./virtual_controller/virtual_controller_node.py:98:1: E302 expected 2 blank lines, found 1
+[0.960s] def main(args=None):
+[0.960s] ^
+[0.960s] 
+[0.960s] ./virtual_controller/virtual_controller_node.py:105:1: E305 expected 2 blank lines after class or function definition, found 1
+[0.960s] if __name__ == '__main__':
+[0.960s] ^
+[0.960s] 
+[0.960s] ./virtual_controller/virtual_controller_node.py:106:11: W292 no newline at end of file
+[0.960s]     main()          ^
+[0.960s] 
+[0.960s] 1     CNL100 Class definition does not have a new line.
+[0.960s] 2     E302 expected 2 blank lines, found 1
+[0.960s] 1     E305 expected 2 blank lines after class or function definition, found 1
+[0.960s] 8     E501 line too long (121 > 99 characters)
+[0.960s] 1     I100 Import statements are in the wrong order. 'from evdev import UInput, AbsInfo, ecodes' should be before 'from rclpy.node import Node'
+[0.960s] 1     I101 Imported names are in the wrong order. Should be AbsInfo, ecodes, UInput
+[0.960s] 1     W292 no newline at end of file
+[0.960s] 3     W293 blank line contains whitespace
+[0.960s] 
+[0.960s] 6 files checked
+[0.960s] 18 errors
+[0.960s] 
+[0.960s] 'C'-type errors: 1
+[0.960s] 'E'-type errors: 11
+[0.960s] 'I'-type errors: 2
+[0.960s] 'W'-type errors: 4
+[0.960s] 
+[0.960s] Checked files:
+[0.960s] 
+[0.960s] * ./setup.py
+[0.960s] * ./virtual_controller/__init__.py
+[0.960s] * ./virtual_controller/virtual_controller_node.py
+[0.960s] * ./test/test_flake8.py
+[0.960s] * ./test/test_pep257.py
+[0.960s] * ./test/test_copyright.py
+[0.961s] ----------------------------- Captured stderr call -----------------------------
+[0.961s] option --max-complexity: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+[0.961s] option --application-import-names: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+[0.961s] option --application-package-names: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+[0.961s] option --import-order-style: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+[0.961s] option --quotes: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+[0.961s] option --inline-quotes: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+[0.961s] option --multiline-quotes: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+[0.961s] option --docstring-quotes: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+[0.961s] - generated xml file: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/virtual_controller/pytest.xml -
+[0.961s] =========================== short test summary info ============================
+[0.961s] FAILED test/test_flake8.py::test_flake8 - AssertionError: Found 18 code style...
+[0.961s] [31m============== [31m[1m1 failed[0m, [32m1 passed[0m, [33m1 skipped[0m, [33m2 warnings[0m[31m in 0.20s[0m[31m ==============[0m
+[0.961s] [33m=============================== warnings summary ===============================[0m
+[0.961s] test/test_flake8.py::test_flake8
+[0.961s] test/test_flake8.py::test_flake8
+[0.961s]   Warning: SelectableGroups dict interface is deprecated. Use select.
+[0.961s] 
+[0.961s] -- Docs: https://docs.pytest.org/en/stable/warnings.html
+[1.002s] Invoked command in '/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/src/virtual_controller' returned '1': AMENT_PREFIX_PATH=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/virtual_controller:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/virtual_controller/pytest.xml --junit-prefix=virtual_controller -o cache_dir=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/virtual_controller/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/virtual_controller:/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/virtual_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest

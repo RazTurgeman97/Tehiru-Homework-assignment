@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-610242963b91fc0529c2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "liftoff_utils__py",
+					"jsonFile" : "directory-liftoff_utils__py-307ac252f64efbf18b7c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_utils/liftoff_utils__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "liftoff_utils",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_liftoff_utils_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_liftoff_utils_egg-4ed0191de79a3249407d.json",
+					"name" : "ament_cmake_python_build_liftoff_utils_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_liftoff_utils::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_liftoff_utils-acdf1e838c829dda8933.json",
+					"name" : "ament_cmake_python_symlink_liftoff_utils",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "liftoff_utils::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-liftoff_utils-0c3f1f4b58a194f479ab.json",
+					"name" : "liftoff_utils",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "liftoff_utils__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-liftoff_utils__cpp-2893164f9ddcf5db2d5b.json",
+					"name" : "liftoff_utils__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "liftoff_utils__py::@ae8d7a7564ea01b02406",
+					"jsonFile" : "target-liftoff_utils__py-210517949437880edb3b.json",
+					"name" : "liftoff_utils__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "liftoff_utils__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-liftoff_utils__rosidl_generator_c-4e83407f6681bd2193e5.json",
+					"name" : "liftoff_utils__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "liftoff_utils__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-liftoff_utils__rosidl_generator_py-c87aa832165db906a311.json",
+					"name" : "liftoff_utils__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "liftoff_utils__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-liftoff_utils__rosidl_typesupport_c-307d095d9e1eab93527f.json",
+					"name" : "liftoff_utils__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "liftoff_utils__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-liftoff_utils__rosidl_typesupport_c__pyext-708509cee8bda87c9a78.json",
+					"name" : "liftoff_utils__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "liftoff_utils__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-liftoff_utils__rosidl_typesupport_cpp-1d66d49f7d0f66424ad3.json",
+					"name" : "liftoff_utils__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "liftoff_utils__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-liftoff_utils__rosidl_typesupport_fastrtps_c-d64f30c2c1cd7251c7c8.json",
+					"name" : "liftoff_utils__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "liftoff_utils__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-liftoff_utils__rosidl_typesupport_fastrtps_c__pyext-272ac01bb5b1b8cbc72a.json",
+					"name" : "liftoff_utils__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "liftoff_utils__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-liftoff_utils__rosidl_typesupport_fastrtps_cpp-a229f4b273ce3ba88121.json",
+					"name" : "liftoff_utils__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "liftoff_utils__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-liftoff_utils__rosidl_typesupport_introspection_c-8a92d35adcfdd4a5abfe.json",
+					"name" : "liftoff_utils__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "liftoff_utils__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-liftoff_utils__rosidl_typesupport_introspection_c__pyext-394982248d596fa40e16.json",
+					"name" : "liftoff_utils__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "liftoff_utils__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-liftoff_utils__rosidl_typesupport_introspection_cpp-0c58f9bcc1b1bf5631f7.json",
+					"name" : "liftoff_utils__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "liftoff_utils_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-liftoff_utils_uninstall-ba824862fe755083c716.json",
+					"name" : "liftoff_utils_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-f7878334a6767d230eae.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_utils",
+		"source" : "/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/src/liftoff_utils"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

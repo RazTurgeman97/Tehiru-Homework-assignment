@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "liftoff_utils__py",
+		"source" : "/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_utils/liftoff_utils__py"
+	}
+}

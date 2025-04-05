@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from virtual_ps_controller/srv/SetButton.srv
+// generated code does not contain a copyright notice
+
+
+module virtual_ps_controller {
+  module srv {
+    @verbatim (language="comment", text=
+      "Request")
+    struct SetButton_Request {
+      uint8 button_id;
+
+      boolean pressed;
+    };
+    @verbatim (language="comment", text=
+      "Response")
+    struct SetButton_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};

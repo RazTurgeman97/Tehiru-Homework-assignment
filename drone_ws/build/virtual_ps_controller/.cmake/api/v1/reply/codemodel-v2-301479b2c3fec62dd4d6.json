@@ -1,0 +1,242 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-c9bd9340e682a74d32e4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "virtual_ps_controller__py",
+					"jsonFile" : "directory-virtual_ps_controller__py-fa49cc6eaf86a2109223.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/virtual_ps_controller/virtual_ps_controller__py",
+					"targetIndexes" : 
+					[
+						6
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "virtual_ps_controller",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_virtual_ps_controller_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_virtual_ps_controller_egg-195ea04c62e05a0b7af5.json",
+					"name" : "ament_cmake_python_build_virtual_ps_controller_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_virtual_ps_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_virtual_ps_controller-bf5998bf1bc295cb75a2.json",
+					"name" : "ament_cmake_python_copy_virtual_ps_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ps_controller_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ps_controller_node-315126575e0e0d15c549.json",
+					"name" : "ps_controller_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-5910640b3ff76b0642cc.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "virtual_ps_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-virtual_ps_controller-421f8cd7fc630c78a598.json",
+					"name" : "virtual_ps_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "virtual_ps_controller__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-virtual_ps_controller__cpp-1495a874a751b9c5bc8a.json",
+					"name" : "virtual_ps_controller__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "virtual_ps_controller__py::@b6d5fa0ca37d84f79e59",
+					"jsonFile" : "target-virtual_ps_controller__py-40d8ebbfa3daf0404a6c.json",
+					"name" : "virtual_ps_controller__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "virtual_ps_controller__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-virtual_ps_controller__rosidl_generator_c-f1e7355fbd507fce54b3.json",
+					"name" : "virtual_ps_controller__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "virtual_ps_controller__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-virtual_ps_controller__rosidl_generator_py-a9b0fb6509161dde2efc.json",
+					"name" : "virtual_ps_controller__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "virtual_ps_controller__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-virtual_ps_controller__rosidl_typesupport_c-cec96411efae69f5ba9c.json",
+					"name" : "virtual_ps_controller__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "virtual_ps_controller__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-virtual_ps_controller__rosidl_typesupport_c__pyext-5dc3d7c9e856f0a27001.json",
+					"name" : "virtual_ps_controller__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "virtual_ps_controller__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-virtual_ps_controller__rosidl_typesupport_cpp-effd4d9c0a772ce384e0.json",
+					"name" : "virtual_ps_controller__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "virtual_ps_controller__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-virtual_ps_controller__rosidl_typesupport_fastrtps_c-9859d13fe3db0464e5c1.json",
+					"name" : "virtual_ps_controller__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "virtual_ps_controller__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-virtual_ps_controller__rosidl_typesupport_fastrtps_c__pyext-379ff975b8db8f5a827b.json",
+					"name" : "virtual_ps_controller__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "virtual_ps_controller__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-virtual_ps_controller__rosidl_typesupport_fastrtps_cpp-7008c131a7e78ea03ca5.json",
+					"name" : "virtual_ps_controller__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "virtual_ps_controller__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-virtual_ps_controller__rosidl_typesupport_introspection_c-3e4dd75e2273fbe679b9.json",
+					"name" : "virtual_ps_controller__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "virtual_ps_controller__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-virtual_ps_controller__rosidl_typesupport_introspection_c__pyext-5472a46264e9c159a9c2.json",
+					"name" : "virtual_ps_controller__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "virtual_ps_controller__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-virtual_ps_controller__rosidl_typesupport_introspection_cpp-c1c5d4977b3d592c4545.json",
+					"name" : "virtual_ps_controller__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "virtual_ps_controller_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-virtual_ps_controller_uninstall-4814a9c1ccdb9f1de6a8.json",
+					"name" : "virtual_ps_controller_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/virtual_ps_controller",
+		"source" : "/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/src/virtual_ps_controller"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

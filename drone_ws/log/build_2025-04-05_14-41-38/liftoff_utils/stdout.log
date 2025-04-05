@@ -1,0 +1,118 @@
+[  3%] Built target liftoff_utils__cpp
+[ 12%] Built target liftoff_utils__rosidl_generator_c
+[ 12%] Built target ament_cmake_python_symlink_liftoff_utils
+[ 22%] Built target liftoff_utils__rosidl_typesupport_cpp
+[ 41%] Built target liftoff_utils__rosidl_typesupport_introspection_cpp
+[ 41%] Built target liftoff_utils__rosidl_typesupport_c
+[ 51%] Built target liftoff_utils__rosidl_typesupport_fastrtps_cpp
+[ 61%] Built target liftoff_utils__rosidl_typesupport_fastrtps_c
+[ 70%] Built target liftoff_utils__rosidl_typesupport_introspection_c
+[ 70%] Built target liftoff_utils
+[ 74%] Built target liftoff_utils__py
+[ 80%] Built target liftoff_utils__rosidl_generator_py
+[ 87%] Built target liftoff_utils__rosidl_typesupport_fastrtps_c__pyext
+[ 93%] Built target liftoff_utils__rosidl_typesupport_c__pyext
+[100%] Built target liftoff_utils__rosidl_typesupport_introspection_c__pyext
+running egg_info
+writing liftoff_utils.egg-info/PKG-INFO
+writing dependency_links to liftoff_utils.egg-info/dependency_links.txt
+writing top-level names to liftoff_utils.egg-info/top_level.txt
+reading manifest file 'liftoff_utils.egg-info/SOURCES.txt'
+writing manifest file 'liftoff_utils.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_liftoff_utils_egg
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/ament_index/resource_index/rosidl_interfaces/liftoff_utils
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/include/liftoff_utils/liftoff_utils/msg/rosidl_generator_c__visibility_control.h
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/include/liftoff_utils/liftoff_utils/srv/detail/target_navigation__functions.h
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/include/liftoff_utils/liftoff_utils/srv/detail/target_navigation__struct.h
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/include/liftoff_utils/liftoff_utils/srv/detail/target_navigation__type_support.h
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/include/liftoff_utils/liftoff_utils/srv/target_navigation.h
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/environment/library_path.sh
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/environment/library_path.dsv
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/include/liftoff_utils/liftoff_utils/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/include/liftoff_utils/liftoff_utils/srv/detail/target_navigation__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/include/liftoff_utils/liftoff_utils/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/include/liftoff_utils/liftoff_utils/srv/detail/target_navigation__builder.hpp
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/include/liftoff_utils/liftoff_utils/srv/detail/target_navigation__struct.hpp
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/include/liftoff_utils/liftoff_utils/srv/detail/target_navigation__traits.hpp
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/include/liftoff_utils/liftoff_utils/srv/detail/target_navigation__type_support.hpp
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/include/liftoff_utils/liftoff_utils/srv/target_navigation.hpp
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/include/liftoff_utils/liftoff_utils/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/include/liftoff_utils/liftoff_utils/srv/detail/target_navigation__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/include/liftoff_utils/liftoff_utils/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/include/liftoff_utils/liftoff_utils/srv/detail/target_navigation__rosidl_typesupport_introspection_c.h
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/include/liftoff_utils/liftoff_utils/srv/detail/target_navigation__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/environment/pythonpath.sh
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/environment/pythonpath.dsv
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/local/lib/python3.10/dist-packages/liftoff_utils-0.0.0-py3.10.egg-info/PKG-INFO
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/local/lib/python3.10/dist-packages/liftoff_utils-0.0.0-py3.10.egg-info/SOURCES.txt
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/local/lib/python3.10/dist-packages/liftoff_utils-0.0.0-py3.10.egg-info/dependency_links.txt
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/local/lib/python3.10/dist-packages/liftoff_utils-0.0.0-py3.10.egg-info/top_level.txt
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/local/lib/python3.10/dist-packages/liftoff_utils/__init__.py
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/local/lib/python3.10/dist-packages/liftoff_utils/_liftoff_utils_s.ep.rosidl_typesupport_c.c
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/local/lib/python3.10/dist-packages/liftoff_utils/_liftoff_utils_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/local/lib/python3.10/dist-packages/liftoff_utils/_liftoff_utils_s.ep.rosidl_typesupport_introspection_c.c
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/local/lib/python3.10/dist-packages/liftoff_utils/libliftoff_utils__rosidl_generator_py.so
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/local/lib/python3.10/dist-packages/liftoff_utils/liftoff_utils_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/local/lib/python3.10/dist-packages/liftoff_utils/liftoff_utils_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/local/lib/python3.10/dist-packages/liftoff_utils/liftoff_utils_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/local/lib/python3.10/dist-packages/liftoff_utils/srv/__init__.py
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/local/lib/python3.10/dist-packages/liftoff_utils/srv/_target_navigation.py
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/local/lib/python3.10/dist-packages/liftoff_utils/srv/_target_navigation_s.c
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/local/lib/python3.10/dist-packages/liftoff_utils/liftoff_utils_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/local/lib/python3.10/dist-packages/liftoff_utils/liftoff_utils_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/local/lib/python3.10/dist-packages/liftoff_utils/liftoff_utils_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/srv/TargetNavigation.idl
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/srv/TargetNavigation.srv
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/srv/TargetNavigation_Request.msg
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/srv/TargetNavigation_Response.msg
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/ament_index/resource_index/package_run_dependencies/liftoff_utils
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/ament_index/resource_index/parent_prefix_path/liftoff_utils
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/environment/path.sh
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/environment/path.dsv
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/local_setup.bash
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/local_setup.sh
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/local_setup.zsh
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/local_setup.dsv
+-- Symlinking: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/package.dsv
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/ament_index/resource_index/packages/liftoff_utils
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/cmake/rosidl_cmake-extras.cmake
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/cmake/ament_cmake_export_targets-extras.cmake
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/cmake/liftoff_utilsConfig.cmake
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/cmake/liftoff_utilsConfig-version.cmake
+-- Up-to-date symlink: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/package.xml
+-- Up-to-date: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/lib/libliftoff_utils__rosidl_generator_c.so
+-- Up-to-date: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/lib/libliftoff_utils__rosidl_typesupport_fastrtps_c.so
+-- Up-to-date: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/lib/libliftoff_utils__rosidl_typesupport_fastrtps_cpp.so
+-- Up-to-date: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/lib/libliftoff_utils__rosidl_typesupport_introspection_c.so
+-- Up-to-date: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/lib/libliftoff_utils__rosidl_typesupport_c.so
+-- Up-to-date: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/lib/libliftoff_utils__rosidl_typesupport_introspection_cpp.so
+-- Up-to-date: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/lib/libliftoff_utils__rosidl_typesupport_cpp.so
+Listing '/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/local/lib/python3.10/dist-packages/liftoff_utils'...
+Listing '/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/local/lib/python3.10/dist-packages/liftoff_utils/srv'...
+-- Up-to-date: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/lib/libliftoff_utils__rosidl_generator_py.so
+-- Up-to-date: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/cmake/export_liftoff_utils__rosidl_generator_cExport.cmake
+-- Up-to-date: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/cmake/export_liftoff_utils__rosidl_generator_cExport-noconfig.cmake
+-- Up-to-date: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/cmake/export_liftoff_utils__rosidl_typesupport_fastrtps_cExport.cmake
+-- Up-to-date: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/cmake/export_liftoff_utils__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Up-to-date: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/cmake/export_liftoff_utils__rosidl_generator_cppExport.cmake
+-- Up-to-date: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/cmake/export_liftoff_utils__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Up-to-date: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/cmake/export_liftoff_utils__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Up-to-date: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/cmake/liftoff_utils__rosidl_typesupport_introspection_cExport.cmake
+-- Up-to-date: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/cmake/liftoff_utils__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Up-to-date: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/cmake/liftoff_utils__rosidl_typesupport_cExport.cmake
+-- Up-to-date: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/cmake/liftoff_utils__rosidl_typesupport_cExport-noconfig.cmake
+-- Up-to-date: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/cmake/liftoff_utils__rosidl_typesupport_introspection_cppExport.cmake
+-- Up-to-date: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/cmake/liftoff_utils__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Up-to-date: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/cmake/liftoff_utils__rosidl_typesupport_cppExport.cmake
+-- Up-to-date: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/cmake/liftoff_utils__rosidl_typesupport_cppExport-noconfig.cmake
+-- Up-to-date: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/cmake/export_liftoff_utils__rosidl_generator_pyExport.cmake
+-- Up-to-date: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_utils/share/liftoff_utils/cmake/export_liftoff_utils__rosidl_generator_pyExport-noconfig.cmake

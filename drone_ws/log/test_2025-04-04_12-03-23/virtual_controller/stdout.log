@@ -1,0 +1,147 @@
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+cachedir: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/virtual_controller/.pytest_cache
+rootdir: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/src/virtual_controller
+plugins: launch-testing-1.0.8, ament-xmllint-0.12.12, ament-lint-0.12.12, ament-pep257-0.12.12, ament-flake8-0.12.12, ament-copyright-0.12.12, launch-testing-ros-0.19.9, cov-3.0.0, colcon-core-0.19.0, repeat-0.9.1, rerunfailures-10.2
+[1mcollecting ... [0m[1m
+collected 3 items                                                              [0m
+
+test/test_copyright.py [33ms[0m[32m                                                 [ 33%][0m
+test/test_flake8.py [31mF[0m[31m                                                    [ 66%][0m
+test/test_pep257.py [32m.[0m[31m                                                    [100%][0m
+
+=================================== FAILURES ===================================
+[31m[1m_________________________________ test_flake8 __________________________________[0m
+[1m[31mtest/test_flake8.py[0m:23: in test_flake8
+    [94massert[39;49;00m rc == [94m0[39;49;00m, \
+[1m[31mE   AssertionError: Found 18 code style errors / warnings:[0m
+[1m[31mE     ./virtual_controller/virtual_controller_node.py:3:1: I101 Imported names are in the wrong order. Should be AbsInfo, ecodes, UInput[0m
+[1m[31mE     ./virtual_controller/virtual_controller_node.py:3:1: I100 Import statements are in the wrong order. 'from evdev import UInput, AbsInfo, ecodes' should be before 'from rclpy.node import Node'[0m
+[1m[31mE     ./virtual_controller/virtual_controller_node.py:6:1: E302 expected 2 blank lines, found 1[0m
+[1m[31mE     ./virtual_controller/virtual_controller_node.py:7:1: CNL100 Class definition does not have a new line.[0m
+[1m[31mE     ./virtual_controller/virtual_controller_node.py:15:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./virtual_controller/virtual_controller_node.py:19:100: E501 line too long (121 > 99 characters)[0m
+[1m[31mE     ./virtual_controller/virtual_controller_node.py:20:100: E501 line too long (121 > 99 characters)[0m
+[1m[31mE     ./virtual_controller/virtual_controller_node.py:21:100: E501 line too long (122 > 99 characters)[0m
+[1m[31mE     ./virtual_controller/virtual_controller_node.py:22:100: E501 line too long (122 > 99 characters)[0m
+[1m[31mE     ./virtual_controller/virtual_controller_node.py:23:100: E501 line too long (125 > 99 characters)[0m
+[1m[31mE     ./virtual_controller/virtual_controller_node.py:24:100: E501 line too long (126 > 99 characters)[0m
+[1m[31mE     ./virtual_controller/virtual_controller_node.py:25:100: E501 line too long (113 > 99 characters)[0m
+[1m[31mE     ./virtual_controller/virtual_controller_node.py:26:100: E501 line too long (113 > 99 characters)[0m
+[1m[31mE     ./virtual_controller/virtual_controller_node.py:49:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./virtual_controller/virtual_controller_node.py:80:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./virtual_controller/virtual_controller_node.py:98:1: E302 expected 2 blank lines, found 1[0m
+[1m[31mE     ./virtual_controller/virtual_controller_node.py:105:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[1m[31mE     ./virtual_controller/virtual_controller_node.py:106:11: W292 no newline at end of file[0m
+[1m[31mE   assert 1 == 0[0m
+----------------------------- Captured stdout call -----------------------------
+
+./virtual_controller/virtual_controller_node.py:3:1: I101 Imported names are in the wrong order. Should be AbsInfo, ecodes, UInput
+from evdev import UInput, AbsInfo, ecodes as e
+^
+
+./virtual_controller/virtual_controller_node.py:3:1: I100 Import statements are in the wrong order. 'from evdev import UInput, AbsInfo, ecodes' should be before 'from rclpy.node import Node'
+from evdev import UInput, AbsInfo, ecodes as e
+^
+
+./virtual_controller/virtual_controller_node.py:6:1: E302 expected 2 blank lines, found 1
+class VirtualControllerNode(Node):
+^
+
+./virtual_controller/virtual_controller_node.py:7:1: CNL100 Class definition does not have a new line.
+    def __init__(self):
+^
+
+./virtual_controller/virtual_controller_node.py:15:1: W293 blank line contains whitespace
+        
+^
+
+./virtual_controller/virtual_controller_node.py:19:100: E501 line too long (121 > 99 characters)
+                    (e.ABS_X, AbsInfo(value=0, min=-32768, max=32767, fuzz=0, flat=0, resolution=0)),   # Left joystick X
+                                                                                                   ^
+
+./virtual_controller/virtual_controller_node.py:20:100: E501 line too long (121 > 99 characters)
+                    (e.ABS_Y, AbsInfo(value=0, min=-32768, max=32767, fuzz=0, flat=0, resolution=0)),   # Left joystick Y
+                                                                                                   ^
+
+./virtual_controller/virtual_controller_node.py:21:100: E501 line too long (122 > 99 characters)
+                    (e.ABS_RX, AbsInfo(value=0, min=-32768, max=32767, fuzz=0, flat=0, resolution=0)),  # Right joystick X
+                                                                                                   ^
+
+./virtual_controller/virtual_controller_node.py:22:100: E501 line too long (122 > 99 characters)
+                    (e.ABS_RY, AbsInfo(value=0, min=-32768, max=32767, fuzz=0, flat=0, resolution=0)),  # Right joystick Y
+                                                                                                   ^
+
+./virtual_controller/virtual_controller_node.py:23:100: E501 line too long (125 > 99 characters)
+                    (e.ABS_Z, AbsInfo(value=0, min=-32768, max=32767, fuzz=0, flat=0, resolution=0)),          # Left trigger
+                                                                                                   ^
+
+./virtual_controller/virtual_controller_node.py:24:100: E501 line too long (126 > 99 characters)
+                    (e.ABS_RZ, AbsInfo(value=0, min=-32768, max=32767, fuzz=0, flat=0, resolution=0)),         # Right trigger
+                                                                                                   ^
+
+./virtual_controller/virtual_controller_node.py:25:100: E501 line too long (113 > 99 characters)
+                    (e.ABS_HAT0X, AbsInfo(value=0, min=-1, max=1, fuzz=0, flat=0, resolution=0)),       # D-pad X
+                                                                                                   ^
+
+./virtual_controller/virtual_controller_node.py:26:100: E501 line too long (113 > 99 characters)
+                    (e.ABS_HAT0Y, AbsInfo(value=0, min=-1, max=1, fuzz=0, flat=0, resolution=0)),       # D-pad Y
+                                                                                                   ^
+
+./virtual_controller/virtual_controller_node.py:49:1: W293 blank line contains whitespace
+        
+^
+
+./virtual_controller/virtual_controller_node.py:80:1: W293 blank line contains whitespace
+        
+^
+
+./virtual_controller/virtual_controller_node.py:98:1: E302 expected 2 blank lines, found 1
+def main(args=None):
+^
+
+./virtual_controller/virtual_controller_node.py:105:1: E305 expected 2 blank lines after class or function definition, found 1
+if __name__ == '__main__':
+^
+
+./virtual_controller/virtual_controller_node.py:106:11: W292 no newline at end of file
+    main()          ^
+
+1     CNL100 Class definition does not have a new line.
+2     E302 expected 2 blank lines, found 1
+1     E305 expected 2 blank lines after class or function definition, found 1
+8     E501 line too long (121 > 99 characters)
+1     I100 Import statements are in the wrong order. 'from evdev import UInput, AbsInfo, ecodes' should be before 'from rclpy.node import Node'
+1     I101 Imported names are in the wrong order. Should be AbsInfo, ecodes, UInput
+1     W292 no newline at end of file
+3     W293 blank line contains whitespace
+
+6 files checked
+18 errors
+
+'C'-type errors: 1
+'E'-type errors: 11
+'I'-type errors: 2
+'W'-type errors: 4
+
+Checked files:
+
+* ./setup.py
+* ./virtual_controller/__init__.py
+* ./virtual_controller/virtual_controller_node.py
+* ./test/test_flake8.py
+* ./test/test_pep257.py
+* ./test/test_copyright.py
+----------------------------- Captured stderr call -----------------------------
+option --max-complexity: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+option --application-import-names: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+option --application-package-names: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+option --import-order-style: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+option --quotes: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+option --inline-quotes: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+option --multiline-quotes: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+option --docstring-quotes: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+- generated xml file: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/virtual_controller/pytest.xml -
+=========================== short test summary info ============================
+FAILED test/test_flake8.py::test_flake8 - AssertionError: Found 18 code style...
+[31m============== [31m[1m1 failed[0m, [32m1 passed[0m, [33m1 skipped[0m, [33m2 warnings[0m[31m in 0.20s[0m[31m ==============[0m

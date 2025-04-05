@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_utils/rosidl_generator_py/liftoff_utils/liftoff_utils_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" "TARGETS" "liftoff_utils__rosidl_typesupport_fastrtps_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/liftoff_utils")

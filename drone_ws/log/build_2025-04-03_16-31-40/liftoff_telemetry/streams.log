@@ -1,0 +1,19 @@
+[0.832s] Invoking command in '/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_telemetry': PYTHONPATH=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_telemetry/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_telemetry/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_telemetry/build --no-deps symlink_data --force
+[1.001s] running develop
+[1.108s] running egg_info
+[1.108s] writing liftoff_telemetry.egg-info/PKG-INFO
+[1.108s] writing dependency_links to liftoff_telemetry.egg-info/dependency_links.txt
+[1.108s] writing entry points to liftoff_telemetry.egg-info/entry_points.txt
+[1.108s] writing requirements to liftoff_telemetry.egg-info/requires.txt
+[1.108s] writing top-level names to liftoff_telemetry.egg-info/top_level.txt
+[1.110s] reading manifest file 'liftoff_telemetry.egg-info/SOURCES.txt'
+[1.110s] writing manifest file 'liftoff_telemetry.egg-info/SOURCES.txt'
+[1.111s] running build_ext
+[1.111s] Creating /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_telemetry/lib/python3.10/site-packages/liftoff-telemetry.egg-link (link to .)
+[1.111s] Installing liftoff_telemetry_node script to /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_telemetry/lib/liftoff_telemetry
+[1.111s] 
+[1.111s] Installed /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_telemetry
+[1.112s] running symlink_data
+[1.112s] symbolically linking /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_telemetry/resource/liftoff_telemetry -> /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_telemetry/share/ament_index/resource_index/packages
+[1.112s] symbolically linking /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_telemetry/package.xml -> /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_telemetry/share/liftoff_telemetry
+[1.140s] Invoked command in '/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_telemetry' returned '0': PYTHONPATH=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_telemetry/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_telemetry/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_telemetry/build --no-deps symlink_data --force

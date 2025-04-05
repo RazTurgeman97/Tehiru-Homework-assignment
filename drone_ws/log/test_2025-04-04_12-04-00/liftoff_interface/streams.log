@@ -1,0 +1,38 @@
+[0.166s] Invoking command in '/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/src/liftoff_interface': AMENT_PREFIX_PATH=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/pytest.xml --junit-prefix=liftoff_interface -o cache_dir=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface:/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[0.427s] [1m============================= test session starts ==============================[0m
+[0.428s] platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+[0.430s] cachedir: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/.pytest_cache
+[0.430s] rootdir: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/src/liftoff_interface
+[0.430s] plugins: launch-testing-1.0.8, ament-xmllint-0.12.12, ament-lint-0.12.12, ament-pep257-0.12.12, ament-flake8-0.12.12, ament-copyright-0.12.12, launch-testing-ros-0.19.9, cov-3.0.0, colcon-core-0.19.0, repeat-0.9.1, rerunfailures-10.2
+[0.478s] [1mcollecting ... [0m[1m
+[0.478s] collected 0 items / 1 error                                                    [0m
+[0.494s] 
+[0.494s] ==================================== ERRORS ====================================
+[0.495s] [31m[1m________________________ ERROR collecting test session _________________________[0m
+[0.495s] [1m[31m/usr/lib/python3/dist-packages/pluggy/hooks.py[0m:286: in __call__
+[0.517s]     [94mreturn[39;49;00m [96mself[39;49;00m._hookexec([96mself[39;49;00m, [96mself[39;49;00m.get_hookimpls(), kwargs)
+[0.517s] [1m[31m/usr/lib/python3/dist-packages/pluggy/manager.py[0m:92: in _hookexec
+[0.517s]     [94mreturn[39;49;00m [96mself[39;49;00m._inner_hookexec(hook, methods, kwargs)
+[0.517s] [1m[31m/usr/lib/python3/dist-packages/pluggy/manager.py[0m:83: in <lambda>
+[0.517s]     [96mself[39;49;00m._inner_hookexec = [94mlambda[39;49;00m hook, methods, kwargs: hook.multicall(
+[0.517s] [1m[31m/usr/lib/python3/dist-packages/_pytest/python.py[0m:200: in pytest_collect_file
+[0.517s]     module: Module = ihook.pytest_pycollect_makemodule(path=path, parent=parent)
+[0.517s] [1m[31m/usr/lib/python3/dist-packages/pluggy/hooks.py[0m:286: in __call__
+[0.517s]     [94mreturn[39;49;00m [96mself[39;49;00m._hookexec([96mself[39;49;00m, [96mself[39;49;00m.get_hookimpls(), kwargs)
+[0.517s] [1m[31m/usr/lib/python3/dist-packages/pluggy/manager.py[0m:92: in _hookexec
+[0.517s]     [94mreturn[39;49;00m [96mself[39;49;00m._inner_hookexec(hook, methods, kwargs)
+[0.517s] [1m[31m/usr/lib/python3/dist-packages/pluggy/manager.py[0m:83: in <lambda>
+[0.518s]     [96mself[39;49;00m._inner_hookexec = [94mlambda[39;49;00m hook, methods, kwargs: hook.multicall(
+[0.518s] [1m[31m/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py[0m:193: in pytest_pycollect_makemodule
+[0.518s]     entrypoint = find_launch_test_entrypoint(path)
+[0.518s] [1m[31m/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py[0m:186: in find_launch_test_entrypoint
+[0.518s]     module = path.pyimport()
+[0.518s] [1m[31m/usr/lib/python3/dist-packages/py/_path/local.py[0m:704: in pyimport
+[0.518s]     [96m__import__[39;49;00m(modname)
+[0.518s] [1m[31mE   ModuleNotFoundError: No module named 'test_system'[0m
+[0.518s] - generated xml file: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/pytest.xml -
+[0.518s] =========================== short test summary info ============================
+[0.518s] ERROR  - ModuleNotFoundError: No module named 'test_system'
+[0.518s] !!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+[0.518s] [31m=============================== [31m[1m1 error[0m[31m in 0.09s[0m[31m ===============================[0m
+[0.549s] Invoked command in '/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/src/liftoff_interface' returned '2': AMENT_PREFIX_PATH=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/pytest.xml --junit-prefix=liftoff_interface -o cache_dir=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface:/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest

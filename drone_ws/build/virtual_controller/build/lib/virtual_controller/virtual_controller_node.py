@@ -1,3 +1,4 @@
+
 import rclpy
 from rclpy.node import Node
 from evdev import UInput, AbsInfo, ecodes as e
@@ -20,8 +21,8 @@ class VirtualControllerNode(Node):
                     (e.ABS_Y, AbsInfo(value=0, min=-32768, max=32767, fuzz=0, flat=0, resolution=0)),   # Left joystick Y
                     (e.ABS_RX, AbsInfo(value=0, min=-32768, max=32767, fuzz=0, flat=0, resolution=0)),  # Right joystick X
                     (e.ABS_RY, AbsInfo(value=0, min=-32768, max=32767, fuzz=0, flat=0, resolution=0)),  # Right joystick Y
-                    (e.ABS_Z, AbsInfo(value=0, min=0, max=255, fuzz=0, flat=0, resolution=0)),          # Left trigger
-                    (e.ABS_RZ, AbsInfo(value=0, min=0, max=255, fuzz=0, flat=0, resolution=0)),         # Right trigger
+                    (e.ABS_Z, AbsInfo(value=0, min=-32768, max=32767, fuzz=0, flat=0, resolution=0)),   # Left trigger
+                    (e.ABS_RZ, AbsInfo(value=0, min=-32768, max=32767, fuzz=0, flat=0, resolution=0)),  # Right trigger
                     (e.ABS_HAT0X, AbsInfo(value=0, min=-1, max=1, fuzz=0, flat=0, resolution=0)),       # D-pad X
                     (e.ABS_HAT0Y, AbsInfo(value=0, min=-1, max=1, fuzz=0, flat=0, resolution=0)),       # D-pad Y
                 ],
@@ -40,9 +41,9 @@ class VirtualControllerNode(Node):
                 ],
                 e.EV_FF: [],  # Force feedback (optional)
             },
-            vendor=0x045e,
-            product=0x028e,
-            version=0x0110,
+            # vendor=0x045e,
+            # product=0x028e,
+            # version=0x0110,
             bustype=e.BUS_USB,
             name='Xbox Virtual Controller',
         )

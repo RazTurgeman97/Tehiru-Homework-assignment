@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="1" tests="3" time="0.133" timestamp="2025-04-04T12:07:39.371817+03:00" hostname="raz-lab"><testcase classname="virtual_controller.test.test_copyright" name="test_copyright" time="0.000"><skipped type="pytest.skip" message="No copyright header has been placed in the generated source file.">/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/src/virtual_controller/test/test_copyright.py:20: No copyright header has been placed in the generated source file.</skipped></testcase><testcase classname="virtual_controller.test.test_flake8" name="test_flake8" time="0.030"><failure message="ValueError: 'choice' is not callable">test/test_flake8.py:22: in test_flake8
+    rc, errors = main_with_errors(argv=[])
+/opt/ros/humble/lib/python3.10/site-packages/ament_flake8/main.py:88: in main_with_errors
+    report = generate_flake8_report(
+/opt/ros/humble/lib/python3.10/site-packages/ament_flake8/main.py:267: in generate_flake8_report
+    style = get_flake8_style_guide(flake8_argv)
+/opt/ros/humble/lib/python3.10/site-packages/ament_flake8/main.py:186: in get_flake8_style_guide
+    application.plugins, application.options = parse_args(argv)
+/home/raz/.local/lib/python3.10/site-packages/flake8/options/parse_args.py:51: in parse_args
+    option_manager.register_plugins(plugins)
+/home/raz/.local/lib/python3.10/site-packages/flake8/options/manager.py:259: in register_plugins
+    add_options(self)
+/usr/lib/python3/dist-packages/flake8_quotes/__init__.py:109: in add_options
+    cls._register_opt(parser, '--quotes', action='store',
+/usr/lib/python3/dist-packages/flake8_quotes/__init__.py:99: in _register_opt
+    parser.add_option(*args, **kwargs)
+/home/raz/.local/lib/python3.10/site-packages/flake8/options/manager.py:281: in add_option
+    self._current_group.add_argument(*option_args, **option_kwargs)
+/usr/lib/python3.10/argparse.py:1447: in add_argument
+    raise ValueError('%r is not callable' % (type_func,))
+E   ValueError: 'choice' is not callable</failure></testcase><testcase classname="virtual_controller.test.test_pep257" name="test_pep257" time="0.014" /></testsuite></testsuites>

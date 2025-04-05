@@ -1,0 +1,37 @@
+// generated from rosidl_typesupport_fastrtps_c/resource/idl__rosidl_typesupport_fastrtps_c.h.em
+// with input from virtual_ps_controller:msg/ButtonState.idl
+// generated code does not contain a copyright notice
+#ifndef VIRTUAL_PS_CONTROLLER__MSG__DETAIL__BUTTON_STATE__ROSIDL_TYPESUPPORT_FASTRTPS_C_H_
+#define VIRTUAL_PS_CONTROLLER__MSG__DETAIL__BUTTON_STATE__ROSIDL_TYPESUPPORT_FASTRTPS_C_H_
+
+
+#include <stddef.h>
+#include "rosidl_runtime_c/message_type_support_struct.h"
+#include "rosidl_typesupport_interface/macros.h"
+#include "virtual_ps_controller/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_virtual_ps_controller
+size_t get_serialized_size_virtual_ps_controller__msg__ButtonState(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_virtual_ps_controller
+size_t max_serialized_size_virtual_ps_controller__msg__ButtonState(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_virtual_ps_controller
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, virtual_ps_controller, msg, ButtonState)();
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif  // VIRTUAL_PS_CONTROLLER__MSG__DETAIL__BUTTON_STATE__ROSIDL_TYPESUPPORT_FASTRTPS_C_H_

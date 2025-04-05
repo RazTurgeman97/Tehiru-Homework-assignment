@@ -1,0 +1,42 @@
+[0.499s] Invoking command in '/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/virtual_ps_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/src/virtual_ps_controller -DCMAKE_INSTALL_PREFIX=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/virtual_ps_controller
+[0.561s] -- The C compiler identification is GNU 11.4.0
+[0.616s] -- The CXX compiler identification is GNU 11.4.0
+[0.622s] -- Detecting C compiler ABI info
+[0.673s] -- Detecting C compiler ABI info - done
+[0.678s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.678s] -- Detecting C compile features
+[0.679s] -- Detecting C compile features - done
+[0.681s] -- Detecting CXX compiler ABI info
+[0.739s] -- Detecting CXX compiler ABI info - done
+[0.746s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.746s] -- Detecting CXX compile features
+[0.747s] -- Detecting CXX compile features - done
+[0.749s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.859s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.922s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.976s] -- Added test 'lint_cmake' to check CMake code style
+[0.977s] -- Added test 'xmllint' to check XML markup files
+[0.978s] -- Configuring done
+[0.979s] -- Generating done
+[0.980s] -- Build files have been written to: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/virtual_ps_controller
+[0.983s] Invoked command in '/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/virtual_ps_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/src/virtual_ps_controller -DCMAKE_INSTALL_PREFIX=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/virtual_ps_controller
+[0.984s] Invoking command in '/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/virtual_ps_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/virtual_ps_controller -- -j24 -l24
+[1.016s] Invoked command in '/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/virtual_ps_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/virtual_ps_controller -- -j24 -l24
+[1.025s] Invoking command in '/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/virtual_ps_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/virtual_ps_controller
+[1.030s] -- Install configuration: ""
+[1.030s] -- Installing: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/virtual_ps_controller/share/ament_index/resource_index/package_run_dependencies/virtual_ps_controller
+[1.030s] -- Installing: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/virtual_ps_controller/share/ament_index/resource_index/parent_prefix_path/virtual_ps_controller
+[1.030s] -- Installing: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/virtual_ps_controller/share/virtual_ps_controller/environment/ament_prefix_path.sh
+[1.031s] -- Installing: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/virtual_ps_controller/share/virtual_ps_controller/environment/ament_prefix_path.dsv
+[1.031s] -- Installing: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/virtual_ps_controller/share/virtual_ps_controller/environment/path.sh
+[1.031s] -- Installing: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/virtual_ps_controller/share/virtual_ps_controller/environment/path.dsv
+[1.031s] -- Installing: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/virtual_ps_controller/share/virtual_ps_controller/local_setup.bash
+[1.031s] -- Installing: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/virtual_ps_controller/share/virtual_ps_controller/local_setup.sh
+[1.031s] -- Installing: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/virtual_ps_controller/share/virtual_ps_controller/local_setup.zsh
+[1.031s] -- Installing: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/virtual_ps_controller/share/virtual_ps_controller/local_setup.dsv
+[1.031s] -- Installing: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/virtual_ps_controller/share/virtual_ps_controller/package.dsv
+[1.031s] -- Installing: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/virtual_ps_controller/share/ament_index/resource_index/packages/virtual_ps_controller
+[1.031s] -- Installing: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/virtual_ps_controller/share/virtual_ps_controller/cmake/virtual_ps_controllerConfig.cmake
+[1.031s] -- Installing: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/virtual_ps_controller/share/virtual_ps_controller/cmake/virtual_ps_controllerConfig-version.cmake
+[1.031s] -- Installing: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/virtual_ps_controller/share/virtual_ps_controller/package.xml
+[1.032s] Invoked command in '/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/virtual_ps_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/virtual_ps_controller

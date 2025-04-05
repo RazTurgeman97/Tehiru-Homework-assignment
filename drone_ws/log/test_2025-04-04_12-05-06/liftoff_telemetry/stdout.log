@@ -1,0 +1,39 @@
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.10.12, pytest-8.3.5, pluggy-1.5.0
+cachedir: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_telemetry/.pytest_cache
+rootdir: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/src/liftoff_telemetry
+plugins: launch-testing-1.0.8, ament-xmllint-0.12.12, ament-lint-0.12.12, ament-pep257-0.12.12, ament-flake8-0.12.12, ament-copyright-0.12.12, launch-testing-ros-0.19.9, cov-3.0.0, colcon-core-0.19.0, repeat-0.9.1, rerunfailures-10.2
+[1mcollecting ... [0m[1m
+collected 3 items                                                              [0m
+
+test/test_copyright.py [33ms[0m[32m                                                 [ 33%][0m
+test/test_flake8.py [31mF[0m[31m                                                    [ 66%][0m
+test/test_pep257.py [32m.[0m[31m                                                    [100%][0m
+
+=================================== FAILURES ===================================
+[31m[1m_________________________________ test_flake8 __________________________________[0m
+[1m[31mtest/test_flake8.py[0m:22: in test_flake8
+    [0mrc, errors = main_with_errors(argv=[])
+[1m[31m/opt/ros/humble/lib/python3.10/site-packages/ament_flake8/main.py[0m:88: in main_with_errors
+    [0mreport = generate_flake8_report(
+[1m[31m/opt/ros/humble/lib/python3.10/site-packages/ament_flake8/main.py[0m:267: in generate_flake8_report
+    [0mstyle = get_flake8_style_guide(flake8_argv)
+[1m[31m/opt/ros/humble/lib/python3.10/site-packages/ament_flake8/main.py[0m:186: in get_flake8_style_guide
+    [0mapplication.plugins, application.options = parse_args(argv)
+[1m[31m/home/raz/.local/lib/python3.10/site-packages/flake8/options/parse_args.py[0m:51: in parse_args
+    [0moption_manager.register_plugins(plugins)
+[1m[31m/home/raz/.local/lib/python3.10/site-packages/flake8/options/manager.py[0m:259: in register_plugins
+    [0madd_options([96mself[39;49;00m)
+[1m[31m/usr/lib/python3/dist-packages/flake8_import_order/flake8_linter.py[0m:44: in add_options
+    [0mregister_opt(
+[1m[31m/usr/lib/python3/dist-packages/flake8_import_order/flake8_linter.py[0m:98: in register_opt
+    [0mparser.add_option(*args, **kwargs)
+[1m[31m/home/raz/.local/lib/python3.10/site-packages/flake8/options/manager.py[0m:281: in add_option
+    [0m[96mself[39;49;00m._current_group.add_argument(*option_args, **option_kwargs)
+[1m[31m/usr/lib/python3.10/argparse.py[0m:1447: in add_argument
+    [0m[94mraise[39;49;00m [96mValueError[39;49;00m([33m'[39;49;00m[33m%r[39;49;00m[33m is not callable[39;49;00m[33m'[39;49;00m % (type_func,))
+[1m[31mE   ValueError: 'string' is not callable[0m
+- generated xml file: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_telemetry/pytest.xml -
+[36m[1m=========================== short test summary info ============================[0m
+[31mFAILED[0m test/test_flake8.py::[1mtest_flake8[0m - ValueError: 'string' is not callable
+[31m==================== [31m[1m1 failed[0m, [32m1 passed[0m, [33m1 skipped[0m[31m in 0.15s[0m[31m ====================[0m

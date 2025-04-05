@@ -1,0 +1,49 @@
+[0.414s] Invoking command in '/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface': PYTHONPATH=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/build
+[0.581s] running develop
+[0.691s] Removing /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/python3.10/site-packages/liftoff-interface.egg-link (link to .)
+[0.707s] Invoked command in '/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface' returned '0': PYTHONPATH=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/build
+[0.709s] Invoking command in '/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/src/liftoff_interface': PYTHONPATH=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/liftoff_interface build --build-base /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/build install --record /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/install.log --single-version-externally-managed install_data --force
+[0.862s] running egg_info
+[0.863s] writing ../../build/liftoff_interface/liftoff_interface.egg-info/PKG-INFO
+[0.863s] writing dependency_links to ../../build/liftoff_interface/liftoff_interface.egg-info/dependency_links.txt
+[0.863s] writing entry points to ../../build/liftoff_interface/liftoff_interface.egg-info/entry_points.txt
+[0.863s] writing requirements to ../../build/liftoff_interface/liftoff_interface.egg-info/requires.txt
+[0.863s] writing top-level names to ../../build/liftoff_interface/liftoff_interface.egg-info/top_level.txt
+[0.864s] reading manifest file '../../build/liftoff_interface/liftoff_interface.egg-info/SOURCES.txt'
+[0.865s] writing manifest file '../../build/liftoff_interface/liftoff_interface.egg-info/SOURCES.txt'
+[0.865s] running build
+[0.865s] running build_py
+[0.865s] copying liftoff_interface/target_selector.py -> /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/build/lib/liftoff_interface
+[0.865s] copying liftoff_interface/drone_controller.py -> /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/build/lib/liftoff_interface
+[0.865s] copying liftoff_interface/target_navigation_service.py -> /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/build/lib/liftoff_interface
+[0.865s] running install
+[0.865s] running install_lib
+[0.866s] copying /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/build/lib/liftoff_interface/liftoff_bridge.py -> /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/python3.10/site-packages/liftoff_interface
+[0.866s] copying /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/build/lib/liftoff_interface/target_selector.py -> /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/python3.10/site-packages/liftoff_interface
+[0.866s] copying /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/build/lib/liftoff_interface/__init__.py -> /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/python3.10/site-packages/liftoff_interface
+[0.866s] copying /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/build/lib/liftoff_interface/mock_obstacle_publisher.py -> /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/python3.10/site-packages/liftoff_interface
+[0.866s] copying /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/build/lib/liftoff_interface/drone_controller.py -> /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/python3.10/site-packages/liftoff_interface
+[0.866s] copying /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/build/lib/liftoff_interface/sensor_listener.py -> /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/python3.10/site-packages/liftoff_interface
+[0.866s] copying /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/build/lib/liftoff_interface/target_navigation_service.py -> /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/python3.10/site-packages/liftoff_interface
+[0.866s] byte-compiling /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/python3.10/site-packages/liftoff_interface/liftoff_bridge.py to liftoff_bridge.cpython-310.pyc
+[0.866s] byte-compiling /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/python3.10/site-packages/liftoff_interface/target_selector.py to target_selector.cpython-310.pyc
+[0.867s] byte-compiling /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/python3.10/site-packages/liftoff_interface/__init__.py to __init__.cpython-310.pyc
+[0.867s] byte-compiling /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/python3.10/site-packages/liftoff_interface/mock_obstacle_publisher.py to mock_obstacle_publisher.cpython-310.pyc
+[0.867s] byte-compiling /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/python3.10/site-packages/liftoff_interface/drone_controller.py to drone_controller.cpython-310.pyc
+[0.868s] byte-compiling /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/python3.10/site-packages/liftoff_interface/sensor_listener.py to sensor_listener.cpython-310.pyc
+[0.868s] byte-compiling /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/python3.10/site-packages/liftoff_interface/target_navigation_service.py to target_navigation_service.cpython-310.pyc
+[0.868s] running install_data
+[0.868s] copying resource/liftoff_interface -> /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/share/ament_index/resource_index/packages
+[0.868s] copying package.xml -> /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/share/liftoff_interface
+[0.868s] copying launch/test_system.launch.py -> /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/share/liftoff_interface/launch
+[0.868s] running install_egg_info
+[0.869s] Copying ../../build/liftoff_interface/liftoff_interface.egg-info to /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/python3.10/site-packages/liftoff_interface-0.0.0-py3.10.egg-info
+[0.870s] running install_scripts
+[0.884s] Installing drone_controller script to /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/liftoff_interface
+[0.884s] Installing liftoff_bridge script to /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/liftoff_interface
+[0.884s] Installing mock_obstacle_publisher script to /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/liftoff_interface
+[0.884s] Installing sensor_listener script to /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/liftoff_interface
+[0.884s] Installing target_navigation_service script to /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/liftoff_interface
+[0.884s] Installing target_selector script to /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/liftoff_interface
+[0.884s] writing list of installed files to '/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/install.log'
+[0.898s] Invoked command in '/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/src/liftoff_interface' returned '0': PYTHONPATH=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/liftoff_interface build --build-base /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/build install --record /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/install.log --single-version-externally-managed install_data --force

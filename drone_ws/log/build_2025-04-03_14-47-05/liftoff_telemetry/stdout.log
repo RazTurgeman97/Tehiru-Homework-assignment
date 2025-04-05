@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/liftoff_telemetry/liftoff_telemetry.egg-info/PKG-INFO
+writing dependency_links to ../../build/liftoff_telemetry/liftoff_telemetry.egg-info/dependency_links.txt
+writing entry points to ../../build/liftoff_telemetry/liftoff_telemetry.egg-info/entry_points.txt
+writing requirements to ../../build/liftoff_telemetry/liftoff_telemetry.egg-info/requires.txt
+writing top-level names to ../../build/liftoff_telemetry/liftoff_telemetry.egg-info/top_level.txt
+reading manifest file '../../build/liftoff_telemetry/liftoff_telemetry.egg-info/SOURCES.txt'
+writing manifest file '../../build/liftoff_telemetry/liftoff_telemetry.egg-info/SOURCES.txt'
+running build
+running build_py
+copying liftoff_telemetry/telemetry.py -> /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_telemetry/build/lib/liftoff_telemetry
+running install
+running install_lib
+copying /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_telemetry/build/lib/liftoff_telemetry/telemetry.py -> /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_telemetry/lib/python3.10/site-packages/liftoff_telemetry
+byte-compiling /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_telemetry/lib/python3.10/site-packages/liftoff_telemetry/telemetry.py to telemetry.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_telemetry/lib/python3.10/site-packages/liftoff_telemetry-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/liftoff_telemetry/liftoff_telemetry.egg-info to /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_telemetry/lib/python3.10/site-packages/liftoff_telemetry-0.0.0-py3.10.egg-info
+running install_scripts
+Installing liftoff_telemetry_node script to /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_telemetry/lib/liftoff_telemetry
+writing list of installed files to '/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_telemetry/install.log'

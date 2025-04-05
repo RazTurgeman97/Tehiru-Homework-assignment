@@ -1,0 +1,204 @@
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+cachedir: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_telemetry/.pytest_cache
+rootdir: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/src/liftoff_telemetry
+plugins: launch-testing-1.0.8, ament-xmllint-0.12.12, ament-lint-0.12.12, ament-pep257-0.12.12, ament-flake8-0.12.12, ament-copyright-0.12.12, launch-testing-ros-0.19.9, cov-3.0.0, colcon-core-0.19.0, repeat-0.9.1, rerunfailures-10.2
+[1mcollecting ... [0m[1m
+collected 3 items                                                              [0m
+
+test/test_copyright.py [33ms[0m[32m                                                 [ 33%][0m
+test/test_flake8.py [31mF[0m[31m                                                    [ 66%][0m
+test/test_pep257.py [32m.[0m[31m                                                    [100%][0m
+
+=================================== FAILURES ===================================
+[31m[1m_________________________________ test_flake8 __________________________________[0m
+[1m[31mtest/test_flake8.py[0m:23: in test_flake8
+    [94massert[39;49;00m rc == [94m0[39;49;00m, \
+[1m[31mE   AssertionError: Found 28 code style errors / warnings:[0m
+[1m[31mE     ./liftoff_telemetry/liftoff_telemetry_node.py:3:1: I100 Import statements are in the wrong order. 'import socket' should be before 'from rclpy.node import Node' and in a different group.[0m
+[1m[31mE     ./liftoff_telemetry/liftoff_telemetry_node.py:3:1: I201 Missing newline between import groups. 'import socket' is identified as Stdlib and 'from rclpy.node import Node' is identified as Third Party.[0m
+[1m[31mE     ./liftoff_telemetry/liftoff_telemetry_node.py:5:1: I201 Missing newline between import groups. 'from std_msgs.msg import Float32, Float32MultiArray' is identified as Third Party and 'import struct' is identified as Stdlib.[0m
+[1m[31mE     ./liftoff_telemetry/liftoff_telemetry_node.py:7:1: E302 expected 2 blank lines, found 1[0m
+[1m[31mE     ./liftoff_telemetry/liftoff_telemetry_node.py:8:1: CNL100 Class definition does not have a new line.[0m
+[1m[31mE     ./liftoff_telemetry/liftoff_telemetry_node.py:21:32: Q000 Double quotes found but single quotes preferred[0m
+[1m[31mE     ./liftoff_telemetry/liftoff_telemetry_node.py:31:100: E501 line too long (104 > 99 characters)[0m
+[1m[31mE     ./liftoff_telemetry/liftoff_telemetry_node.py:40:37: Q000 Double quotes found but single quotes preferred[0m
+[1m[31mE     ./liftoff_telemetry/liftoff_telemetry_node.py:41:37: Q000 Double quotes found but single quotes preferred[0m
+[1m[31mE     ./liftoff_telemetry/liftoff_telemetry_node.py:42:37: Q000 Double quotes found but single quotes preferred[0m
+[1m[31mE     ./liftoff_telemetry/liftoff_telemetry_node.py:47:41: Q000 Double quotes found but single quotes preferred[0m
+[1m[31mE     ./liftoff_telemetry/liftoff_telemetry_node.py:47:100: E501 line too long (104 > 99 characters)[0m
+[1m[31mE     ./liftoff_telemetry/liftoff_telemetry_node.py:48:41: Q000 Double quotes found but single quotes preferred[0m
+[1m[31mE     ./liftoff_telemetry/liftoff_telemetry_node.py:52:100: E501 line too long (100 > 99 characters)[0m
+[1m[31mE     ./liftoff_telemetry/liftoff_telemetry_node.py:53:37: Q000 Double quotes found but single quotes preferred[0m
+[1m[31mE     ./liftoff_telemetry/liftoff_telemetry_node.py:59:37: Q000 Double quotes found but single quotes preferred[0m
+[1m[31mE     ./liftoff_telemetry/liftoff_telemetry_node.py:65:37: Q000 Double quotes found but single quotes preferred[0m
+[1m[31mE     ./liftoff_telemetry/liftoff_telemetry_node.py:71:37: Q000 Double quotes found but single quotes preferred[0m
+[1m[31mE     ./liftoff_telemetry/liftoff_telemetry_node.py:77:37: Q000 Double quotes found but single quotes preferred[0m
+[1m[31mE     ./liftoff_telemetry/liftoff_telemetry_node.py:83:37: Q000 Double quotes found but single quotes preferred[0m
+[1m[31mE     ./liftoff_telemetry/liftoff_telemetry_node.py:89:37: Q000 Double quotes found but single quotes preferred[0m
+[1m[31mE     ./liftoff_telemetry/liftoff_telemetry_node.py:95:37: Q000 Double quotes found but single quotes preferred[0m
+[1m[31mE     ./liftoff_telemetry/liftoff_telemetry_node.py:101:37: Q000 Double quotes found but single quotes preferred[0m
+[1m[31mE     ./liftoff_telemetry/liftoff_telemetry_node.py:108:37: Q000 Double quotes found but single quotes preferred[0m
+[1m[31mE     ./liftoff_telemetry/liftoff_telemetry_node.py:111:37: Q000 Double quotes found but single quotes preferred[0m
+[1m[31mE     ./liftoff_telemetry/liftoff_telemetry_node.py:113:1: E302 expected 2 blank lines, found 1[0m
+[1m[31mE     ./liftoff_telemetry/liftoff_telemetry_node.py:120:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[1m[31mE     ./liftoff_telemetry/liftoff_telemetry_node.py:121:11: W292 no newline at end of file[0m
+[1m[31mE   assert 1 == 0[0m
+----------------------------- Captured stdout call -----------------------------
+
+./liftoff_telemetry/liftoff_telemetry_node.py:3:1: I100 Import statements are in the wrong order. 'import socket' should be before 'from rclpy.node import Node' and in a different group.
+import socket
+^
+
+./liftoff_telemetry/liftoff_telemetry_node.py:3:1: I201 Missing newline between import groups. 'import socket' is identified as Stdlib and 'from rclpy.node import Node' is identified as Third Party.
+import socket
+^
+
+./liftoff_telemetry/liftoff_telemetry_node.py:5:1: I201 Missing newline between import groups. 'from std_msgs.msg import Float32, Float32MultiArray' is identified as Third Party and 'import struct' is identified as Stdlib.
+from std_msgs.msg import Float32, Float32MultiArray
+^
+
+./liftoff_telemetry/liftoff_telemetry_node.py:7:1: E302 expected 2 blank lines, found 1
+class LiftoffTelemetryNode(Node):
+^
+
+./liftoff_telemetry/liftoff_telemetry_node.py:8:1: CNL100 Class definition does not have a new line.
+    def __init__(self):
+^
+
+./liftoff_telemetry/liftoff_telemetry_node.py:21:32: Q000 Double quotes found but single quotes preferred
+        self.get_logger().info(f"Listening for telemetry data on {self.udp_ip}:{self.udp_port}")
+                               ^
+
+./liftoff_telemetry/liftoff_telemetry_node.py:31:100: E501 line too long (104 > 99 characters)
+        self.battery_percentage_pub = self.create_publisher(Float32, 'telemetry/battery_percentage', 10)
+                                                                                                   ^
+
+./liftoff_telemetry/liftoff_telemetry_node.py:40:37: Q000 Double quotes found but single quotes preferred
+            self.get_logger().debug(f"Raw data received: {data}")
+                                    ^
+
+./liftoff_telemetry/liftoff_telemetry_node.py:41:37: Q000 Double quotes found but single quotes preferred
+            self.get_logger().debug(f"Raw data (hex): {data.hex()}")
+                                    ^
+
+./liftoff_telemetry/liftoff_telemetry_node.py:42:37: Q000 Double quotes found but single quotes preferred
+            self.get_logger().debug(f"Received data size: {len(data)} bytes")
+                                    ^
+
+./liftoff_telemetry/liftoff_telemetry_node.py:47:41: Q000 Double quotes found but single quotes preferred
+                self.get_logger().error(f"Unexpected data size: {len(data)} (expected {expected_size})")
+                                        ^
+
+./liftoff_telemetry/liftoff_telemetry_node.py:47:100: E501 line too long (104 > 99 characters)
+                self.get_logger().error(f"Unexpected data size: {len(data)} (expected {expected_size})")
+                                                                                                   ^
+
+./liftoff_telemetry/liftoff_telemetry_node.py:48:41: Q000 Double quotes found but single quotes preferred
+                self.get_logger().debug(f"Raw data (hex): {data.hex()}")
+                                        ^
+
+./liftoff_telemetry/liftoff_telemetry_node.py:52:100: E501 line too long (100 > 99 characters)
+            unpacked_data = struct.unpack('=f3f4f3f3f4f2fB4f', data)  # Added '=' to disable padding
+                                                                                                   ^
+
+./liftoff_telemetry/liftoff_telemetry_node.py:53:37: Q000 Double quotes found but single quotes preferred
+            self.get_logger().debug(f"Unpacked data: {unpacked_data}")
+                                    ^
+
+./liftoff_telemetry/liftoff_telemetry_node.py:59:37: Q000 Double quotes found but single quotes preferred
+            self.get_logger().debug(f"Published timestamp: {timestamp_msg.data}")
+                                    ^
+
+./liftoff_telemetry/liftoff_telemetry_node.py:65:37: Q000 Double quotes found but single quotes preferred
+            self.get_logger().debug(f"Published position: {position_msg.data}")
+                                    ^
+
+./liftoff_telemetry/liftoff_telemetry_node.py:71:37: Q000 Double quotes found but single quotes preferred
+            self.get_logger().debug(f"Published attitude: {attitude_msg.data}")
+                                    ^
+
+./liftoff_telemetry/liftoff_telemetry_node.py:77:37: Q000 Double quotes found but single quotes preferred
+            self.get_logger().debug(f"Published velocity: {velocity_msg.data}")
+                                    ^
+
+./liftoff_telemetry/liftoff_telemetry_node.py:83:37: Q000 Double quotes found but single quotes preferred
+            self.get_logger().debug(f"Published gyro: {gyro_msg.data}")
+                                    ^
+
+./liftoff_telemetry/liftoff_telemetry_node.py:89:37: Q000 Double quotes found but single quotes preferred
+            self.get_logger().debug(f"Published input: {input_msg.data}")
+                                    ^
+
+./liftoff_telemetry/liftoff_telemetry_node.py:95:37: Q000 Double quotes found but single quotes preferred
+            self.get_logger().debug(f"Published battery voltage: {battery_voltage_msg.data}")
+                                    ^
+
+./liftoff_telemetry/liftoff_telemetry_node.py:101:37: Q000 Double quotes found but single quotes preferred
+            self.get_logger().debug(f"Published battery percentage: {battery_percentage_msg.data}")
+                                    ^
+
+./liftoff_telemetry/liftoff_telemetry_node.py:108:37: Q000 Double quotes found but single quotes preferred
+            self.get_logger().debug(f"Published motor RPM: {motor_rpm_msg.data}")
+                                    ^
+
+./liftoff_telemetry/liftoff_telemetry_node.py:111:37: Q000 Double quotes found but single quotes preferred
+            self.get_logger().error(f"Error receiving data: {e}")
+                                    ^
+
+./liftoff_telemetry/liftoff_telemetry_node.py:113:1: E302 expected 2 blank lines, found 1
+def main(args=None):
+^
+
+./liftoff_telemetry/liftoff_telemetry_node.py:120:1: E305 expected 2 blank lines after class or function definition, found 1
+if __name__ == '__main__':
+^
+
+./liftoff_telemetry/liftoff_telemetry_node.py:121:11: W292 no newline at end of file
+    main()          ^
+
+1     CNL100 Class definition does not have a new line.
+2     E302 expected 2 blank lines, found 1
+1     E305 expected 2 blank lines after class or function definition, found 1
+3     E501 line too long (104 > 99 characters)
+1     I100 Import statements are in the wrong order. 'import socket' should be before 'from rclpy.node import Node' and in a different group.
+2     I201 Missing newline between import groups. 'import socket' is identified as Stdlib and 'from rclpy.node import Node' is identified as Third Party.
+17    Q000 Double quotes found but single quotes preferred
+1     W292 no newline at end of file
+
+6 files checked
+28 errors
+
+'C'-type errors: 1
+'E'-type errors: 6
+'I'-type errors: 3
+'Q'-type errors: 17
+'W'-type errors: 1
+
+Checked files:
+
+* ./setup.py
+* ./test/test_flake8.py
+* ./test/test_pep257.py
+* ./test/test_copyright.py
+* ./liftoff_telemetry/__init__.py
+* ./liftoff_telemetry/liftoff_telemetry_node.py
+----------------------------- Captured stderr call -----------------------------
+option --max-complexity: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+option --application-import-names: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+option --application-package-names: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+option --import-order-style: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+option --quotes: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+option --inline-quotes: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+option --multiline-quotes: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+option --docstring-quotes: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+- generated xml file: /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_telemetry/pytest.xml -
+=========================== short test summary info ============================
+FAILED test/test_flake8.py::test_flake8 - AssertionError: Found 28 code style...
+[31m============== [31m[1m1 failed[0m, [32m1 passed[0m, [33m1 skipped[0m, [33m2 warnings[0m[31m in 0.20s[0m[31m ==============[0m
+[33m=============================== warnings summary ===============================[0m
+test/test_flake8.py::test_flake8
+test/test_flake8.py::test_flake8
+  Warning: SelectableGroups dict interface is deprecated. Use select.
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html

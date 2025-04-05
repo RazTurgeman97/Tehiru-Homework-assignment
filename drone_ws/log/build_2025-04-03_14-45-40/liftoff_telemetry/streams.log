@@ -1,0 +1,33 @@
+[0.741s] Invoking command in '/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/src/liftoff_telemetry': PYTHONPATH=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_telemetry/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_telemetry/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/liftoff_telemetry build --build-base /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_telemetry/build install --record /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_telemetry/install.log --single-version-externally-managed install_data
+[0.888s] running egg_info
+[0.888s] creating ../../build/liftoff_telemetry/liftoff_telemetry.egg-info
+[0.888s] writing ../../build/liftoff_telemetry/liftoff_telemetry.egg-info/PKG-INFO
+[0.888s] writing dependency_links to ../../build/liftoff_telemetry/liftoff_telemetry.egg-info/dependency_links.txt
+[0.889s] writing entry points to ../../build/liftoff_telemetry/liftoff_telemetry.egg-info/entry_points.txt
+[0.889s] writing requirements to ../../build/liftoff_telemetry/liftoff_telemetry.egg-info/requires.txt
+[0.889s] writing top-level names to ../../build/liftoff_telemetry/liftoff_telemetry.egg-info/top_level.txt
+[0.889s] writing manifest file '../../build/liftoff_telemetry/liftoff_telemetry.egg-info/SOURCES.txt'
+[0.890s] reading manifest file '../../build/liftoff_telemetry/liftoff_telemetry.egg-info/SOURCES.txt'
+[0.890s] writing manifest file '../../build/liftoff_telemetry/liftoff_telemetry.egg-info/SOURCES.txt'
+[0.890s] running build
+[0.890s] running build_py
+[0.891s] creating /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_telemetry/build
+[0.891s] creating /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_telemetry/build/lib
+[0.891s] creating /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_telemetry/build/lib/liftoff_telemetry
+[0.891s] copying liftoff_telemetry/__init__.py -> /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_telemetry/build/lib/liftoff_telemetry
+[0.891s] running install
+[0.891s] running install_lib
+[0.891s] creating /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_telemetry/lib/python3.10/site-packages/liftoff_telemetry
+[0.891s] copying /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_telemetry/build/lib/liftoff_telemetry/__init__.py -> /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_telemetry/lib/python3.10/site-packages/liftoff_telemetry
+[0.891s] byte-compiling /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_telemetry/lib/python3.10/site-packages/liftoff_telemetry/__init__.py to __init__.cpython-310.pyc
+[0.891s] running install_data
+[0.891s] creating /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_telemetry/share/ament_index
+[0.891s] creating /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_telemetry/share/ament_index/resource_index
+[0.891s] creating /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_telemetry/share/ament_index/resource_index/packages
+[0.891s] copying resource/liftoff_telemetry -> /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_telemetry/share/ament_index/resource_index/packages
+[0.891s] copying package.xml -> /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_telemetry/share/liftoff_telemetry
+[0.891s] running install_egg_info
+[0.892s] Copying ../../build/liftoff_telemetry/liftoff_telemetry.egg-info to /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_telemetry/lib/python3.10/site-packages/liftoff_telemetry-0.0.0-py3.10.egg-info
+[0.893s] running install_scripts
+[0.906s] writing list of installed files to '/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_telemetry/install.log'
+[0.921s] Invoked command in '/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/src/liftoff_telemetry' returned '0': PYTHONPATH=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_telemetry/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_telemetry/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/liftoff_telemetry build --build-base /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_telemetry/build install --record /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_telemetry/install.log --single-version-externally-managed install_data

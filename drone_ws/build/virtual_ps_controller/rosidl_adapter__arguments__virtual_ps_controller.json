@@ -1,0 +1,8 @@
+{
+  "package_name": "virtual_ps_controller",
+  "non_idl_tuples": [
+    "/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/src/virtual_ps_controller:msg/ButtonState.msg",
+    "/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/src/virtual_ps_controller:msg/ControllerState.msg",
+    "/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/src/virtual_ps_controller:srv/SetButton.srv"
+  ]
+}

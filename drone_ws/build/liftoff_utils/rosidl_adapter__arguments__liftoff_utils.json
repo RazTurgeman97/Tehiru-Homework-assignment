@@ -1,0 +1,6 @@
+{
+  "package_name": "liftoff_utils",
+  "non_idl_tuples": [
+    "/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/src/liftoff_utils:srv/TargetNavigation.srv"
+  ]
+}

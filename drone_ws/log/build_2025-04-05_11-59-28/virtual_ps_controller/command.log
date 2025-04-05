@@ -1,0 +1,2 @@
+Invoking command in '/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/virtual_ps_controller': /usr/bin/cmake --build /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/virtual_ps_controller -- -j24 -l24
+Invoked command in '/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/virtual_ps_controller' returned '2': /usr/bin/cmake --build /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/virtual_ps_controller -- -j24 -l24

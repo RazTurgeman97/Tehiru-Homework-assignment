@@ -1,0 +1,30 @@
+[0.741s] Invoking command in '/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/src/liftoff_interface': PYTHONPATH=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/liftoff_interface build --build-base /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/build install --record /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/install.log --single-version-externally-managed install_data
+[0.891s] running egg_info
+[0.891s] writing ../../build/liftoff_interface/liftoff_interface.egg-info/PKG-INFO
+[0.892s] writing dependency_links to ../../build/liftoff_interface/liftoff_interface.egg-info/dependency_links.txt
+[0.892s] writing entry points to ../../build/liftoff_interface/liftoff_interface.egg-info/entry_points.txt
+[0.892s] writing requirements to ../../build/liftoff_interface/liftoff_interface.egg-info/requires.txt
+[0.892s] writing top-level names to ../../build/liftoff_interface/liftoff_interface.egg-info/top_level.txt
+[0.893s] reading manifest file '../../build/liftoff_interface/liftoff_interface.egg-info/SOURCES.txt'
+[0.893s] writing manifest file '../../build/liftoff_interface/liftoff_interface.egg-info/SOURCES.txt'
+[0.893s] running build
+[0.893s] running build_py
+[0.894s] copying liftoff_interface/drone_activator.py -> /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/build/lib/liftoff_interface
+[0.894s] running install
+[0.894s] running install_lib
+[0.895s] copying /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/build/lib/liftoff_interface/drone_activator.py -> /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/python3.10/site-packages/liftoff_interface
+[0.895s] byte-compiling /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/python3.10/site-packages/liftoff_interface/drone_activator.py to drone_activator.cpython-310.pyc
+[0.896s] running install_data
+[0.896s] running install_egg_info
+[0.897s] removing '/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/python3.10/site-packages/liftoff_interface-0.0.0-py3.10.egg-info' (and everything under it)
+[0.897s] Copying ../../build/liftoff_interface/liftoff_interface.egg-info to /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/python3.10/site-packages/liftoff_interface-0.0.0-py3.10.egg-info
+[0.898s] running install_scripts
+[0.911s] Installing drone_activator script to /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/liftoff_interface
+[0.911s] Installing drone_controller script to /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/liftoff_interface
+[0.911s] Installing liftoff_bridge script to /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/liftoff_interface
+[0.911s] Installing mock_obstacle_publisher script to /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/liftoff_interface
+[0.911s] Installing sensor_listener script to /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/liftoff_interface
+[0.911s] Installing target_navigation_service script to /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/liftoff_interface
+[0.911s] Installing target_selector script to /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/liftoff_interface
+[0.911s] writing list of installed files to '/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/install.log'
+[0.926s] Invoked command in '/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/src/liftoff_interface' returned '0': PYTHONPATH=/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/install/liftoff_interface/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/liftoff_interface build --build-base /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/build install --record /home/raz/tehiru/Tehiru-Homework-assignment/drone_ws/build/liftoff_interface/install.log --single-version-externally-managed install_data

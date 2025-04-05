@@ -1,0 +1,7 @@
+# Request
+uint8 button_id
+bool pressed
+---
+# Response
+bool success
+string message
