@@ -1,5 +1,0 @@
-[console_scripts]
-altitude_controller = liftoff_interface.altitude_controller:main
-drone_activator = liftoff_interface.drone_activator:main
-flight_controller = liftoff_interface.flight_controller:main
-
