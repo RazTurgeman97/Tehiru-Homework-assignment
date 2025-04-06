@@ -37,7 +37,7 @@ class DroneActivator(Node):
             
         self.attitude_sub = self.create_subscription(
             Point,
-            'drone/attitude',  # Changed from 'telemetry/attitude'
+            'telemetry/attitude',  # Changed from 'drone/attitude'
             self.attitude_callback,
             10)
             
@@ -73,6 +73,11 @@ class DroneActivator(Node):
         self.height_control_timer = None
         self.activation_time = 0
         
+        # Add home position tracking
+        self.home_position = None
+        self.relative_position = None
+        self.target_altitude = 20.0  # Target altitude above home in meters
+        
         # Controller inputs
         self.throttle = 0.0  # Left stick up/down
         self.yaw = 0.0       # Left stick left/right
@@ -82,9 +87,9 @@ class DroneActivator(Node):
         # PID controllers with more conservative gains to reduce oscillation
         self.altitude_error_prev = 0.0
         self.altitude_error_sum = 0.0
-        self.kp_altitude = 0.4   # Reduced for less aggressive control
-        self.ki_altitude = 0.05  # Reduced to minimize overshoot
-        self.kd_altitude = 0.8   # Increased for stronger damping
+        self.kp_altitude = 0.2
+        self.ki_altitude = 0.1
+        self.kd_altitude = 0.9
         
         # Create a timer for checking status
         self.timer = self.create_timer(0.1, self.check_status)
@@ -94,10 +99,50 @@ class DroneActivator(Node):
         
         self.get_logger().info('Drone Activator started. Waiting for simulation...')
         
-        # Add home position tracking
-        self.home_position = None
-        self.relative_position = None
-        self.target_altitude = 20.0  # Target altitude above home in meters
+        self.declare_parameter('target_altitude', 20.0)
+        self.target_altitude = self.get_parameter('target_altitude').value
+
+        # Height control parameters
+        self.declare_parameter('altitude_p_gain', 0.15)  # Proportional gain
+        self.declare_parameter('altitude_i_gain', 0.01)  # Integral gain
+        self.declare_parameter('altitude_d_gain', 0.1)   # Derivative gain
+        self.declare_parameter('hover_throttle', 0.5)    # Base throttle to hover
+        
+        # Get parameter values
+        self.altitude_p_gain = self.get_parameter('altitude_p_gain').value
+        self.altitude_i_gain = self.get_parameter('altitude_i_gain').value
+        self.altitude_d_gain = self.get_parameter('altitude_d_gain').value
+        self.hover_throttle = self.get_parameter('hover_throttle').value
+        
+        # Height control variables
+        self.current_altitude = 0.0
+        self.previous_altitude = 0.0
+        self.altitude_integral = 0.0
+        self.previous_error = 0.0
+        self.last_altitude_time = None
+        
+        # Drift compensation system
+        self.declare_parameter('drift_compensation_enabled', True)
+        self.declare_parameter('initial_drift_compensation', -0.05)  # Initial slight down throttle
+        self.declare_parameter('drift_adaptation_rate', 0.005)       # How quickly to adapt
+        self.declare_parameter('min_drift_compensation', -0.2)       # Limit compensation range
+        self.declare_parameter('max_drift_compensation', 0.1)        
+        self.declare_parameter('initial_learning_rate', 0.02)  # Faster initial learning
+        
+        # Get parameter values
+        self.drift_compensation_enabled = self.get_parameter('drift_compensation_enabled').value
+        self.drift_compensation = self.get_parameter('initial_drift_compensation').value
+        self.drift_adaptation_rate = self.get_parameter('drift_adaptation_rate').value
+        self.min_drift_compensation = self.get_parameter('min_drift_compensation').value
+        self.max_drift_compensation = self.get_parameter('max_drift_compensation').value
+        self.initial_learning_rate = self.get_parameter('initial_learning_rate').value
+        
+        # Drift learning variables
+        self.height_samples = []
+        self.last_adaptation_time = None
+        self.steady_state_detected = False
+        self.steady_state_counter = 0
+        self.initial_learning_phase = True  # Flag for initial learning phase
 
     def battery_callback(self, msg):
         """Called when a new battery percentage reading is received"""
@@ -232,7 +277,7 @@ class DroneActivator(Node):
 
     def start_height_control_and_cancel_timer(self):
         """Start height control and cancel the oneshot timer"""
-        # Cancel the timer (making it effectively oneshot)
+        # Cancel the timer
         if self.height_control_timer is not None:
             self.height_control_timer.cancel()
             self.height_control_timer = None
@@ -286,6 +331,20 @@ class DroneActivator(Node):
         if self.height_control_active and self.drone_activated:
             self.regulate_altitude()
 
+        # Update current altitude
+        self.previous_altitude = self.current_altitude
+        self.current_altitude = msg.z
+        
+        # First time initialization
+        if self.last_altitude_time is None:
+            self.last_altitude_time = self.get_clock().now()
+            return
+        
+        # Track rate of change for derivative control
+        current_time = self.get_clock().now()
+        dt = (current_time - self.last_altitude_time).nanoseconds / 1e9
+        self.last_altitude_time = current_time
+
     def set_home_position(self):
         """Set the current position as the home/reference position"""
         if self.position is None:
@@ -311,7 +370,7 @@ class DroneActivator(Node):
         self.get_logger().info('Home position set, beginning drone activation...')
 
     def regulate_altitude(self):
-        """PID controller with velocity feedback for altitude regulation"""
+        """PID controller with velocity feedback and drift compensation for altitude regulation"""
         if not self.position or not self.home_position:
             self.get_logger().warning("Cannot regulate altitude: position data or home position not available")
             return
@@ -322,7 +381,7 @@ class DroneActivator(Node):
         # Calculate error (target - current)
         altitude_error = self.target_altitude - current_height
         
-        # Get vertical velocity if available (usually y component in our frame)
+        # Get vertical velocity if available (y component of velocity)
         vertical_velocity = 0.0
         if self.velocity and len(self.velocity) >= 3:
             vertical_velocity = self.velocity[1]  # Y-axis velocity
@@ -331,31 +390,28 @@ class DroneActivator(Node):
         altitude_error_derivative = altitude_error - self.altitude_error_prev
         
         # Use velocity feedback to enhance control
-        # This is key to overcoming the drone's physical response delay
-        # If we're going up too fast when trying to go down, we need stronger down control
         velocity_correction = 0.0
         if abs(vertical_velocity) > 0.5:  # If moving significantly
             # If going up while we need to go down (or vice versa), apply stronger correction
             if (vertical_velocity > 0 and altitude_error < 0) or (vertical_velocity < 0 and altitude_error > 0):
                 velocity_correction = -vertical_velocity * 0.5  # Counter the current momentum
-                self.get_logger().debug(f'Velocity correction: {velocity_correction:.2f} (countering momentum)')
         
         # Update integral term with tighter limits to prevent windup
         # Only accumulate integral when close to target to prevent overshooting
-        if abs(altitude_error) < 3.0:
-            self.altitude_error_sum += altitude_error * 0.05  # Accumulate very slowly
+        if abs(altitude_error) < 2.0:
+            self.altitude_error_sum += altitude_error * 0.1
         else:
-            # Reset integral when far from target to prevent large buildups
+# Reset integral when far from target to prevent large buildups
             self.altitude_error_sum = 0.0
             
-        self.altitude_error_sum = max(-0.5, min(0.5, self.altitude_error_sum))  # Even tighter limits
+        self.altitude_error_sum = max(-0.5, min(0.5, self.altitude_error_sum))
         
         # PID formula with velocity feedback
         throttle_adjustment = (
             self.kp_altitude * altitude_error + 
             self.ki_altitude * self.altitude_error_sum + 
             self.kd_altitude * altitude_error_derivative + 
-            velocity_correction  # Add velocity feedback
+            velocity_correction
         )
         
         # Apply predictive control - if we're moving quickly toward target, start slowing down early
@@ -364,7 +420,6 @@ class DroneActivator(Node):
             # Estimate stopping distance based on velocity and apply pre-emptive correction
             stopping_correction = vertical_velocity * 0.3  # Adjust based on how quickly drone stops
             throttle_adjustment -= stopping_correction
-            self.get_logger().debug(f'Applying stopping correction: {stopping_correction:.2f}')
         
         # Apply non-linear mapping to create smoother response
         # For small errors, make very gentle adjustments
@@ -394,12 +449,74 @@ class DroneActivator(Node):
         # Save current error for next iteration
         self.altitude_error_prev = altitude_error
         
+        # ------ DRIFT COMPENSATION LEARNING SYSTEM ------
+        # Learn and adapt drift compensation when close to target and relatively stable
+        if self.drift_compensation_enabled:
+            # Only learn drift when we're close to target and not moving much
+            is_stable = abs(altitude_error) < 0.5 and abs(vertical_velocity) < 0.3
+            
+            # Sample collection for learning
+            if is_stable:
+                self.steady_state_counter += 1
+                self.height_samples.append(current_height)
+                
+                # Keep a moving window of the most recent 20 samples
+                if len(self.height_samples) > 20:
+                    self.height_samples.pop(0)
+                    
+                # If we've been stable for at least 50 cycles, we can consider adapting
+                if self.steady_state_counter >= 50:
+                    self.steady_state_detected = True
+                
+            else:
+                # Reset counter if stability is lost, but keep samples
+                self.steady_state_counter = max(0, self.steady_state_counter - 2)
+                
+            # Adapt drift compensation if we have enough stable samples
+            current_time = time.time()
+            if (self.steady_state_detected and len(self.height_samples) >= 10 and 
+                (self.last_adaptation_time is None or current_time - self.last_adaptation_time > 2.0)):
+                
+                # Calculate the drift trend
+                if len(self.height_samples) >= 2:
+                    # Calculate average drift rate over samples
+                    height_trend = self.height_samples[-1] - self.height_samples[0]
+                    time_span = len(self.height_samples) * 0.1  # Approximately 0.1s per cycle
+                    drift_rate = height_trend / time_span if time_span > 0 else 0
+                    
+                    # If we're drifting up (positive rate), increase downward compensation
+                    # If we're drifting down (negative rate), reduce downward compensation
+                    adaptation_rate = self.initial_learning_rate if self.initial_learning_phase else self.drift_adaptation_rate
+                    self.drift_compensation -= drift_rate * adaptation_rate
+                    
+                    # Keep within limits
+                    self.drift_compensation = max(self.min_drift_compensation, 
+                                                 min(self.max_drift_compensation, self.drift_compensation))
+                    
+                    self.last_adaptation_time = current_time
+                    
+                    # Log adaptation only occasionally
+                    if int(current_time) % 5 == 0:
+                        self.get_logger().info(
+                            f'Drift compensation adapted: {self.drift_compensation:.4f}, '
+                            f'based on drift rate: {drift_rate:.4f} m/s'
+                        )
+        
+        # After a sufficient period (e.g., 5 seconds of flight)
+        if time.time() - self.activation_time > 5.0:
+            self.initial_learning_phase = False
+        
+        # Apply drift compensation to final throttle command
+        final_throttle = throttle_adjustment
+        if self.drift_compensation_enabled:
+            final_throttle += self.drift_compensation
+        
         # Create joy message
         joy_msg = Joy()
         joy_msg.axes = [0.0] * 8
         
-        # Set throttle (left stick Y) based on PID adjustment
-        joy_msg.axes[1] = throttle_adjustment
+        # Set throttle with drift compensation included
+        joy_msg.axes[1] = final_throttle
         
         # Create standard buttons array
         joy_msg.buttons = [0] * 11
@@ -410,12 +527,13 @@ class DroneActivator(Node):
         # Log altitude control info
         curr_time = time.time()
         if int(curr_time * 2) % 2 == 0:  # Log every ~0.5 seconds
-            velocity_info = f', velocity={vertical_velocity:.2f}' if self.velocity else ''
+            drift_info = f', drift_comp={self.drift_compensation:.4f}' if self.drift_compensation_enabled else ''
             self.get_logger().info(
                 f'Altitude control: target={self.target_altitude}m, '
                 f'current={current_height:.2f}m, '
-                f'error={altitude_error:.2f}{velocity_info}, '
-                f'joy_throttle={throttle_adjustment:.2f}'
+                f'error={altitude_error:.2f}, '
+                f'vel={vertical_velocity:.2f}, '
+                f'joy_throttle={final_throttle:.2f}{drift_info}'
             )
 
     def start_height_control(self):
@@ -477,7 +595,7 @@ class DroneActivator(Node):
             self.pitch = msg.axes[3]     # Right stick Y
             self.roll = msg.axes[2]      # Right stick X
             
-            # Important: We will pass the Joy message directly to the joy topic
+            # Pass the Joy message directly to the joy topic
             # so the simulator receives it in the format it expects
             
             # Create a new Joy message to forward to the simulator

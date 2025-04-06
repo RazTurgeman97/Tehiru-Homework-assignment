@@ -31,6 +31,18 @@ def generate_launch_description():
         description='Automatically start the LiftOff simulator'
     )
     
+    target_altitude = DeclareLaunchArgument(
+        'target_altitude',
+        default_value='20.0',
+        description='Default target altitude in meters'
+    )
+
+    drift_adaptation_rate = DeclareLaunchArgument(
+        'drift_adaptation_rate',
+        default_value='0.002',
+        description='Rate at which drift compensation adapts'
+    )
+    
     # Start LiftOff through Steam using the provided command
     liftoff_app = ExecuteProcess(
         cmd=['snap', 'run', 'steam', 'steam://rungameid/410340'],
@@ -60,12 +72,19 @@ def generate_launch_description():
         name='drone_activator'
     )
     
-    # Altitude controller for smooth height control with debug parameter
+    # Altitude controller for smooth height control with debug and PID parameters
     altitude_controller = Node(
         package='liftoff_interface',
         executable='altitude_controller',
         name='altitude_controller',
-        parameters=[{'debug': LaunchConfiguration('altitude_controller_debug')}]
+        parameters=[{
+            'debug': LaunchConfiguration('altitude_controller_debug'),
+            'kp_altitude': 0.3,  # Tune as needed
+            'ki_altitude': 0.02,
+            'kd_altitude': 0.6,
+            'target_altitude': LaunchConfiguration('target_altitude'),
+            'drift_adaptation_rate': LaunchConfiguration('drift_adaptation_rate')
+        }]
     )
     
     # Flight controller for processing input and managing drone behavior
@@ -78,10 +97,12 @@ def generate_launch_description():
     return LaunchDescription([
         altitude_controller_debug,
         auto_start_simulator,
+        target_altitude,
+        drift_adaptation_rate,
         liftoff_app,
         telemetry_node,
         ps_controller_node,
         drone_activator,
-        altitude_controller,
-        flight_controller
+        # altitude_controller,
+        # flight_controller,
     ])

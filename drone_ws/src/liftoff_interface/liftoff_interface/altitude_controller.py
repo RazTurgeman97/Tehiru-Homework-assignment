@@ -14,6 +14,15 @@ class AltitudeController(Node):
         # Add this line to declare the debug parameter with a default value
         self.declare_parameter('debug', False)
         
+        # Add these lines near your other declare_parameter calls
+        self.declare_parameter('kp_altitude', 0.25)
+        self.declare_parameter('ki_altitude', 0.03)
+        self.declare_parameter('kd_altitude', 0.5)
+        
+        # Add these lines to declare drift parameters
+        self.declare_parameter('drift_adaptation_rate', 0.002)
+        self.declare_parameter('initial_drift_compensation', -0.05)
+        
         # Publishers
         self.joy_publisher = self.create_publisher(Joy, 'joy', 10)
         
@@ -58,14 +67,22 @@ class AltitudeController(Node):
         self.altitude_error_sum = 0.0
         self.last_throttle_adjustment = 0.0
         self.last_altitude_control_time = time.time()
-        self.kp_altitude = 0.25   # Proportional gain
-        self.ki_altitude = 0.03   # Integral gain
-        self.kd_altitude = 0.5    # Derivative gain
+        self.kp_altitude = self.get_parameter('kp_altitude').value
+        self.ki_altitude = self.get_parameter('ki_altitude').value
+        self.kd_altitude = self.get_parameter('kd_altitude').value
         self.rate_limit = 0.2     # Maximum change in throttle per second
         
         # Smoother control
         self.previous_throttle_commands = []  # Store recent commands for smoothing
         self.max_history = 3  # Number of previous commands to average
+        
+        # Initialize drift compensation system
+        self.drift_compensation = self.get_parameter('initial_drift_compensation').value
+        self.drift_adaptation_rate = self.get_parameter('drift_adaptation_rate').value
+        self.stable_time = 0.0
+        self.last_throttle_output = 0.0
+        self.natural_ascent_tracked = False
+        self.natural_ascent_rate = 0.0
         
         # Create a timer for altitude control
         self.timer = self.create_timer(0.05, self.altitude_control_loop)
@@ -176,15 +193,6 @@ class AltitudeController(Node):
         
         # Get vertical velocity (positive means going up)
         vertical_velocity = self.velocity[1] if len(self.velocity) >= 3 else 0.0
-        
-        # Initialize drift compensation system if not exists
-        if not hasattr(self, 'drift_compensation'):
-            self.drift_compensation = -0.05  # Start with slight downward compensation
-            self.drift_adaptation_rate = 0.002  # More gentle adaptation rate
-            self.stable_time = 0.0
-            self.last_throttle_output = 0.0
-            self.natural_ascent_tracked = False
-            self.natural_ascent_rate = 0.0
         
         # Update stable time tracking
         is_stable = abs(altitude_error) < 0.3 and abs(vertical_velocity) < 0.15
