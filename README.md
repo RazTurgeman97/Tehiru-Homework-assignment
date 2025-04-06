@@ -4,22 +4,24 @@ The goal of this assignment is to develop a ROS2-based solution for autonomous n
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [Features](#features)
+- [Demonstration](#demonstration)
+- [Overview](#overview)
+- [Key Features](#key_features)
+- [Architecture](#architecture)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Packages](#packages)
 - [Project Structure](#project-structure)
 
+
 ## Introduction
-Collecting workspace information# Drone Control System for LiftOff Simulator
 
 This project provides a ROS2-based control system for the LiftOff drone simulator, allowing for stable flight control and altitude regulation with automatic drift compensation.
 
+
 ## Demonstration
 
-
-
 https://github.com/user-attachments/assets/13df9b57-de68-4d32-8f16-21a1eed22206
-
 
 
 ## Overview
@@ -30,14 +32,16 @@ The system consists of several interconnected packages:
 - **liftoff_telemetry**: Receives and processes telemetry data from the simulator
 - **liftoff_interface**: Provides high-level control for drone activation and flight
 - **liftoff_utils**: Utility services and messages for drone navigation
+  
 
 ## Key Features
 
-- Automatic drone detection and activation
-- Adaptive altitude control with drift compensation learning
-- Smooth flight controls with position and attitude tracking
-- Telemetry processing and visualization
-- Virtual PS4 controller integration
+- ✅ Automatic drone detection and activation  
+- 🚡 Adaptive altitude control with drift compensation  
+- 🎮 Virtual PS4 controller integration  
+- 📊 Telemetry processing and visualization  
+- 🧩 Modular architecture for easy extension
+  
 
 ## Architecture
 
@@ -47,6 +51,7 @@ The system follows a modular architecture with these main components:
 2. **Controller Module**: Translates user inputs to drone commands
 3. **Flight Control**: Altitude regulation and flight stabilization
 4. **Activator**: Handles simulator detection and drone arming
+
 
 ## Installation
 
@@ -86,11 +91,6 @@ ros2 launch liftoff_interface drone_control.launch.py
 - `target_altitude`: Default target altitude in meters (default: 20.0)
 - `drift_adaptation_rate`: Rate at which drift compensation adapts (default: 0.002)
 
-## Flight Control
-
-The drone control mode is **Altitude hold**: Maintains height when throttle is released
-
-The system features an adaptive drift compensation that learns the specific drift characteristics of the drone to maintain stable hovering without user input.
 
 ## Packages
 
@@ -112,6 +112,7 @@ Contains nodes for drone control:
 
 Processes simulator data:
 - liftoff_telemetry_node.py: Receives and distributes telemetry data
+- 
 
 ## Development
 
