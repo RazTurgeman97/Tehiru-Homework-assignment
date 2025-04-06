@@ -1,3 +1,0 @@
-[console_scripts]
-liftoff_telemetry_node = liftoff_telemetry.liftoff_telemetry_node:main
-
