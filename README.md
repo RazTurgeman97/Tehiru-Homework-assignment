@@ -20,6 +20,8 @@ This project provides a ROS2-based control system for the LiftOff drone simulato
 
 https://github.com/user-attachments/assets/d86799d8-a9fa-48a9-9552-584d6526f328
 
+[![Video Thumbnail]](https://github.com/user-attachments/assets/d86799d8-a9fa-48a9-9552-584d6526f328)
+
 
 
 ## Overview
